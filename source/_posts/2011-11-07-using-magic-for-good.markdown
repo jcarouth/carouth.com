@@ -6,6 +6,7 @@ slug: using-magic-for-good
 status: publish
 title: Using magic for good
 wordpress_id: '348'
+comments: true
 categories:
 - PHP
 ---

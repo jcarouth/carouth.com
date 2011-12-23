@@ -6,6 +6,7 @@ slug: html5-tx-pre-conference-thoughts
 status: publish
 title: 'HTML5.tx: Pre-conference thoughts'
 wordpress_id: '343'
+comments: true
 categories:
 - Conferences
 tags:
