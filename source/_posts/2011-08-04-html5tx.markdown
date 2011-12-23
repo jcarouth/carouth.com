@@ -12,70 +12,35 @@ categories:
 - HTML5
 ---
 
-In case you haven't heard, we're _diligently_ working to gather Texas' web
-development community together in Austin to inspire each other through
-presentations, hackathons, and hallway conferences focused on HTML5. The
-conference is called [HTML5.tx](http://html5tx.com), and I'm proud to be
-assisting its organization.
+In case you haven't heard, we're _diligently_ working to gather Texas' web development community together in Austin to inspire each other through presentations, hackathons, and hallway conferences focused on HTML5. The conference is called [HTML5.tx](http://html5tx.com), and I'm proud to beassisting its organization.
 
 ## Who's it for?
 
-Web developers. Mobile developers. Designers. Professionals. Amateurs.
-Students. Your cat or dog. Okay, maybe not your pets, but we're trying to put
-together a groups of speakers that can show us the ins and outs of using HTML5
-and related technologies **right now**. Yes, you read correctly. We're talking
-about _cool things_ you can hear about on October 8 and _implement in your
-projects the very next day_. (Or, if you're truly inspired, head over to the
-open spaces and hack away with your fellow attendees.)
+Web developers. Mobile developers. Designers. Professionals. Amateurs. Students. Your cat or dog. Okay, maybe not your pets, but we're trying to put together a groups of speakers that can show us the ins and outs of using HTML5 and related technologies **right now**. Yes, you read correctly. We're talking about _cool things_ you can hear about on October 8 and _implement in your projects the very next day_. (Or, if you're truly inspired, head over to the open spaces and hack away with your fellow attendees.)
 
 ## What are we going to learn about?
 
-Well, that's kind of up to you, isn't it? Ultimately the team of organizers
-will pick the final lineup, but we're trying to be as transparent as possible
-in creating this conference (just check out the [public Google
-group](http://groups.google.com/group/html5tx)) and we're truly listening to
-what you have to say about the proposals submitted to our Call for Papers. [Go
-vote now!](http://html5tx.uservoice.com)
+Well, that's kind of up to you, isn't it? Ultimately the team of organizers will pick the final lineup, but we're trying to be as transparent as possible in creating this conference (just check out the [public Googlegroup](http://groups.google.com/group/html5tx)) and we're truly listening to what you have to say about the proposals submitted to our Call for Papers. [Go vote now!](http://html5tx.uservoice.com)
 
-We discussed ways to deliver two tracks of talks. The first, and most obvious,
-separation is design and development, but we think that's played out. We
-wanted something fresh. We came up with having a "new" and an "improved"
-track. We'll look for talks that show us new features and new ways of doing
-things made possible by HTML5 for the "new" track, and we'll focus on ways
-HTML5 improves design, development, and even the end-user's experience in the
-"improved" track.
+We discussed ways to deliver two tracks of talks. The first, and most obvious, separation is design and development, but we think that's played out. We wanted something fresh. We came up with having a "new" and an "improved" track. We'll look for talks that show us new features and new ways of doing things made possible by HTML5 for the "new" track, and we'll focus on ways HTML5 improves design, development, and even the end-user's experience in the "improved" track.
 
 For best results, I suggest you attend a couple of each track.
 
-Also, it's not too late to get your submissions in. The CfP closes on August
-19th. [Submit what you're passionate about.](http://bit.ly/SpeakAtHTML5tx)
-Please?
+Also, it's not too late to get your submissions in. The CfP closes on August 19th. [Submit what you're passionate about.](http://bit.ly/SpeakAtHTML5tx)Please?
 
 ## When is it?
 
-October 8. We'll possibly have a pre-event event, and likely a post-event
-event, but the event is on the 8th. If you have to pick just one day, be there
-on the 8th.
+October 8. We'll possibly have a pre-event event, and likely a post-event event, but the event is on the 8th. If you have to pick just one day, be thereon the 8th.
 
 ## Where do I go?
 
-Come to Austin. It's a great city. You won't have time for touristy things,
-but come immerse yourself in the glory of HTML5 at the [Ragsdale Center of St.
-Edward's University](http://think.stedwards.edu/ragsdalecenter/). You can
-check out the tourist spots on Sunday.
+Come to Austin. It's a great city. You won't have time for touristy things, but come immerse yourself in the glory of HTML5 at the [Ragsdale Center of St.Edward's University](http://think.stedwards.edu/ragsdalecenter/). You can check out the tourist spots on Sunday.
 
 ## Why should I come?
 
-You'll **meet some really cool people** with some awesome ideas and intense
-technical knowledge. You'll get a **free t-shirt**. (We are apparently
-advising you not to wear it at the event; I'm not sure you want to be "that
-guy.") But most importantly you'll **gain some knowledge** that you can use to
-make your projects better. You can't put a price on that, but we can! It's
-only $79, though. A _small_ investment and a great value, but I might be
-biased.
+You'll **meet some really cool people** with some awesome ideas and intensetechnical knowledge. You'll get a **free t-shirt**. (We are apparently advising you not to wear it at the event; I'm not sure you want to be "thatguy.") But most importantly you'll **gain some knowledge** that you can use tomake your projects better. You can't put a price on that, but we can! It'sonly $79, though. A _small_ investment and a great value, but I might bebiased.
 
 ## How do I sign up?
 
-I'm glad you asked. Get your ticket from
-[EventBrite.com](http://html5tx.eventbrite.com/).
+I'm glad you asked. Get your ticket from [EventBrite.com](http://html5tx.eventbrite.com/).
 
