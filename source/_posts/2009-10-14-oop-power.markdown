@@ -6,6 +6,7 @@ slug: oop-power
 status: publish
 title: Object Oriented Power, err, Programming
 wordpress_id: '95'
+comments: true
 categories:
 - PHP
 ---

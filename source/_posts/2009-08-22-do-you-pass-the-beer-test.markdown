@@ -6,6 +6,7 @@ slug: do-you-pass-the-beer-test
 status: publish
 title: Do YOU Pass the Beer Test?
 wordpress_id: '22'
+comments: true
 categories:
 - Community
 ---

@@ -6,6 +6,7 @@ slug: the-choice-of-professionalism
 status: publish
 title: The Choice of Professionalism
 wordpress_id: '308'
+comments: true
 categories:
 - Personal
 - Software Development

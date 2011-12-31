@@ -6,6 +6,7 @@ slug: me-in-social-media
 status: publish
 title: Not losing ME in social media
 wordpress_id: '263'
+comments: true
 categories:
 - Social Media
 tags:

@@ -6,6 +6,7 @@ slug: the-modern-php-workflow
 status: publish
 title: The Modern PHP Workflow
 wordpress_id: '99'
+comments: true
 categories:
 - PHP
 tags:

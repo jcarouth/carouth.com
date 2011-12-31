@@ -6,6 +6,7 @@ slug: stupid-simple-productivity%e2%80%94my-toolbox-in-2011
 status: publish
 title: Stupid Simple Productivity—My Toolbox in 2011
 wordpress_id: '328'
+comments: true
 categories:
 - Productivity
 ---

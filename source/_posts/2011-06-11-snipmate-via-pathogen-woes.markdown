@@ -6,6 +6,7 @@ slug: snipmate-via-pathogen-woes
 status: publish
 title: snipMate via Pathogen woes
 wordpress_id: '277'
+comments: true
 categories:
 - Vim
 tags:

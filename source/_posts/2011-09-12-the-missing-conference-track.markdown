@@ -6,6 +6,7 @@ slug: the-missing-conference-track
 status: publish
 title: The Missing Conference Track
 wordpress_id: '332'
+comments: true
 categories:
 - Community
 - Conferences
