@@ -1,0 +1,29 @@
+---
+layout: post
+title: "My New Job"
+date: 2012-02-13 13:31
+comments: true
+categories: 
+- Career
+tags:
+- Liftopia
+- Job
+---
+
+At the beginning of the year I started work as a Senior Software Engineer at [Liftopia](http://www.liftopia.com). It's an amazing opportunity and I'm very proud to be a member of the development team. I wanted to share a bit about my decision to take this opportunity, as well as the changes introduced in my life as a result.
+
+## The Job
+
+The very first question I get when I tell people about my new position is, "What is Liftopia?" The short answer is it's an e-commerce platform that allows ski resorts to move lift ticket inventory at discounted rates. The long answer is much more involved than that, but since my blog leans to the more technical side of discussions, I'll leave it at that.
+
+In the Liftopia ecosystem I work on Team Dev–hopefully that is not a surprise. We maintain, add to, and fight fires with the infrastructure that our website, mobile site, mobile applications, and growing collection of cloud–DRINK!–stores sit on top of. We code in PHP and JavaScript, talk with MySQL and MongoDB databases, and serve up traffic through Apache and Nginx. My specific role on the team is general web development including patching bugs, implementing features, and even the occasional delve into systems administration.
+
+## Influence
+
+Higher education is an interesting place to work. It really does exist as its own ecosystem and culture. I noticed this during my four years working at Texas A&M University. I also noticed that like any large company there is an immensely rigid corporate structure and everything has a form that must be filled out. For some people this structure is liberating. For me it was prison. I'm not saying that I loathed my time at the University. In fact, I met some really great people and had a lot of fun working with them to accomplish the goals of the Texas A&M community. It's just at this time I needed something with a little less red tape and a little more excitement.
+
+Another major contributer to my decision to accept this new position is my personal life. My wife and I are expecting our first child in June 2012, and the flexibility provided me by my new position will be a major asset as we raise him. Telecommuting is interesting in that, when you tell non-telecommuters that you work from home and are expecting a baby, the first reaction is, "oh, that's great! You can stay home and watch the baby!" While that would be rather fantastic, I do have a job to do and I'm fairly certain I don't get paid to watch my own child. That said, I know that my current role will offer me more opportunities to spend time with my child than working a traditional office job.
+
+## Fin
+
+So that's it. I have a new job that I'm excited about. If you are going skiing or snowboarding, you owe it to yourself to see if the area you want to go to has any deals listed on our site. (No, I don't have any insider information or massive amounts of credits I can give you.)
