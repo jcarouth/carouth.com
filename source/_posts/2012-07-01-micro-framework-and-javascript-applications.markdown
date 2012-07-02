@@ -25,7 +25,9 @@ And the slides are available on [speakerdeck.com](https://speakerdeck.com/u/jcar
 
 ## Things that need fixing ##
 
-The first thing to address is with the abstract itself. Looking at __two__ micro frameworks in the code and demo portion of the talk was well simply too much content to present in a single 50-minute session. _That is 100% my mistake_. Other aspects that were difficult to address within the time limits are fully addressing Composer and code organization. I was able to push code organization tips into the sample code I provide on Github. My original intent was to introducte Composer as a tool to help expose and make it easier to use MicroPHP libraries and frameworks, but I can see that the abstract, as written, makes it seem like I will provide more in-depth information about Composer.
+The first thing to address is with the abstract itself. Looking at __two__ micro frameworks in the code and demo portion of the talk was well simply too much content to present in a single 50-minute session. _That is 100% my mistake_. 
+
+Other aspects that were difficult to address within the time limits are fully addressing Composer and code organization. I was able to push code organization tips into the sample code I provide on Github. My original intent was to introduce Composer as a tool to help expose and make it easier to use MicroPHP libraries and frameworks, but I can see that the abstract, as written, makes it seem like I will provide more in-depth information about Composer.
 
 The slides themselves are a resource. They contain highlighted code that can be used to find the important bits in the [example code](http://www.github.com/jcarouth/pomtrac) found on Github.
 
