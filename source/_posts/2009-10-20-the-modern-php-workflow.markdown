@@ -5,7 +5,6 @@ layout: post
 slug: the-modern-php-workflow
 status: publish
 title: The Modern PHP Workflow
-wordpress_id: '99'
 comments: true
 categories:
 - PHP
@@ -96,18 +95,34 @@ real world containers have a maximum amount of material which they will be
 able to hold, so we will first implement size constraints on our containers.
 Let's get our first unit test going:
 
-[code]class ContainerTest extends PHPUnit_Framework_TestCase { public function
-testSizeOfContentsIsZeroOnStart() { $container = new Container();
-$this->assertEquals(0, $container->getSizeOfContents(); } }[/code]
+``` php
+class ContainerTest extends PHPUnit_Framework_TestCase 
+{ 
+    public function testSizeOfContentsIsZeroOnStart() 
+    {
+        $container = new Container();
+        $this->assertEquals(0, $container->getSizeOfContents(); 
+    } 
+}
+```
 
 Now we must implement our Container class:
 
-[code]class Container { public function getSizeOfContents() { } }[/code]
+``` php
+class Container 
+{ 
+    public function getSizeOfContents() 
+    { 
+        
+    } 
+}
+```
 
 Obviously, this is going to fail when we test it, but in the spirit of TDD we
 will run the test anyway as follows:
 
-[code]> phpunit test-1.php
+```
+> phpunit test-1.php
 
 PHPUnit 3.3.3 by Sebastian Bergmann.
 
@@ -126,21 +141,22 @@ Failed asserting that <null> matches expected value <integer:0>.
 FAILURES!
 
 Tests: 1, Assertions: 1, Failures: 1.[/code]
+```
 
 This is really easy to fix so we will update the getSizeOfContents() method to
 the following:
 
-[php]public function getSizeOfContents()
-
+``` php
+public function getSizeOfContents()
 {
-
-return 0;
-
-}[/php]
+    return 0;
+}
+```
 
 Now when we run our unit test we expect that our code will pass the test.
 
-[code]> phpunit test-1.php
+``` 
+> phpunit test-1.php
 
 PHPUnit 3.3.3 by Sebastian Bergmann.
 
@@ -149,6 +165,7 @@ PHPUnit 3.3.3 by Sebastian Bergmann.
 Time: 0 seconds
 
 OK (1 test, 1 assertion)[/code]
+```
 
 This is the point where most people think test driven development is a waste
 of time. The code I wrote to pass the test is obviously not what the final
@@ -161,19 +178,19 @@ know that when we first instantiate our container class that the container
 will tell us its size is 0. What happens when we add an object to the
 container? What will it report as its size then?
 
-[php]public function testGetSizeOfContainerAfterAddingObject()
-
+``` php
+public function testGetSizeOfContainerAfterAddingObject()
 {
+    $container = new Container();
 
-$container = new Container();
+    $container->addObject('object1');
 
-$container->addObject('object1');
+    $this->assertEquals(1, $container->getSizeOfContents());
+}
+```
 
-$this->assertEquals(1, $container->getSizeOfContents());
-
-} [/php]
-
-[code]> phpunit test-2.php
+``` 
+> phpunit test-2.php
 
 PHPUnit 3.3.3 by Sebastian Bergmann.
 
@@ -191,41 +208,32 @@ Failed asserting that <integer:0> matches expected value <integer:1>.
 
 FAILURES!
 
-Tests: 2, Assertions: 2, Failures: 1.[/code]
+Tests: 2, Assertions: 2, Failures: 1.
+```
 
 Fixing our code base to pass the test will look like this:
 
-[php]class Container
-
+``` php
+class Container
 {
+    private $_contents;
 
-private $_contents;
+    public function __construct()
+    {
+        $this->_contents = array();
+    }
 
-public function __construct()
+    public function getSizeOfContents()
+    {
+        return count($this->_contents);
+    }
 
-{
-
-$this->_contents = array();
-
+    public function addObject($obj)
+    {
+        $this->_contents[] = $obj;
+    }
 }
-
-public function getSizeOfContents()
-
-{
-
-return count($this->_contents);
-
-}
-
-public function addObject($obj)
-
-{
-
-$this->_contents[] = $obj;
-
-}
-
-}[/php]
+```
 
 You can see that we have enforced this behavior with our tests. In the second
 test we wrote we know that on instantiation the size of the container must be
@@ -240,19 +248,16 @@ Back to the size constraint; our container must be able to know its maximum
 size and know whether the item(s) being added will exceed that size. Our first
 stab might look like this:
 
-[php]public function testGetSetMaximumSize()
-
+``` php
+public function testGetSetMaximumSize()
 {
+    $container = new Container();
+    $this->assertNull($container->getMaximumSize());
 
-$container = new Container();
-
-$this->assertNull($container->getMaximumSize());
-
-$container->setMaximumSize(5);
-
-$this->assertEquals(5, $this->getMaximumSize());
-
-}[/php]
+    $container->setMaximumSize(5);
+    $this->assertEquals(5, $this->getMaximumSize());
+}
+```
 
 However, we must think about the users of this container class. Is it
 reasonable to force the code to set the maximum value in the manner shown? I
@@ -261,71 +266,56 @@ the line $container->setMaximumSize(5); in all code that uses a maximum size.
 I would much rather pass the size in as a configuration parameter. I'll change
 my test code to model this change in design:
 
-[php]public function testGetSetMaximumSize()
-
+``` php
+public function testGetSetMaximumSize()
 {
+    $containerWithNoMax = new Container();
+    $this->assertNull($container->getMaximumSize());
 
-$containerWithNoMax = new Container();
-
-$this->assertNull($container->getMaximumSize());
-
-$containerWithMax = new Container(array('max' => 5));
-
-$this->assertEquals(5, $this->getMaximumSize());
-
-}[/php]
+    $containerWithMax = new Container(array('max' => 5));
+    $this->assertEquals(5, $this->getMaximumSize());
+}
+```
 
 This test is run. It fails. Now we write the code to pass the test:
 
-[php]class Container
-
+``` php
+class Container
 {
 
-private $_contents;
+    private $_contents;
 
-private $_options;
+    private $_options;
 
-public function __construct($options = null)
+    public function __construct($options = null)
+    {
+        $this->setOptions($options)
+        $this->contents = array();
+    }
 
-{
+    public function setOptions($options)
+    {
+        if(null === $options) {
+            $options = array();
+        }
 
-$this->setOptions($options)
+        $defaults = array(
+            'max' => null
+        );
 
-$this->contents = array();
+        $options = array_merge($options, $defaults);
 
+        $this->options = $options;
+    }
+
+    public function getMaximumSize()
+    {
+        return $this->_options['max'];
+    }
+
+    //rest of code
 }
-
-public function setOptions($options)
-
-{
-
-if(null === $options)
-
-$options = array();
-
-$defaults = array(
-
-'max' => null
-
-);
-
-$options = array_merge($options, $defaults);
-
-$this->options = $options;
-
-}
-
-public function getMaximumSize()
-
-{
-
-return $this->_options['max'];
-
-}
-
-//rest of code
-
-}[/php]
+```
 
 You might have noticed, but I am betting that you did not catch the mistake in
 the above code. On line 22 of the previous listing I used the array_merge()
@@ -340,7 +330,8 @@ caught this mistake without wasting anymore time than it takes to run the unit
 test? It is possible, but the unit test code caught it immediately and I was
 able to correct the code saving myself debugging time in the future.
 
-[code]> phpunit test-2.php
+```
+> phpunit test-2.php
 
 PHPUnit 3.3.3 by Sebastian Bergmann.
 
@@ -359,6 +350,7 @@ Failed asserting that <null> matches expected value <integer:5>.
 FAILURES!
 
 Tests: 3, Assertions: 4, Failures: 1.[/code]
+```
 
 For example's sake we are going to make our Container class throw an exception
 if an object is added to the container which would put the container over
@@ -372,59 +364,40 @@ add a test method that expects an exception to be raised, run the test,
 correct the failure by throwing the exception, and then run the test to verify
 our code behaves according to the contract.
 
-[php]public function testAddTooManyObjectsThrowsException()
-
+``` php
+public function testAddTooManyObjectsThrowsException()
 {
-
-$container = new Container(array('max' => 1));
-
-$container->add('valid');
-
-$this->setExpectedException('ContainerAtMaximumException');
-
-$container->add('over');
-
-}[/php]
+    $container = new Container(array('max' => 1));
+    $container->add('valid');
+    $this->setExpectedException('ContainerAtMaximumException');
+    $container->add('over');
+}
+```
 
 I mentioned there are additional options in PHPUnit for testing exceptions.
 The first is similar to the method above, but involves a special comment, and
 the other is a more traditional approach.
 
-[php]/**
-
-* @expectedException ContainerAtMaximumException  
-*/  
+``` php
+/**
+ * @expectedException ContainerAtMaximumException  
+ */  
 public function testAddTooManyObjectsThrowsException()
-
 {
-
-//code that should throw exception
-
+    //code that should throw exception
 }
 
 public function testAddTooManyObjectsThrowsException()
-
 {
+    try {
+        //code that should throw exception
+    } catch (ContainerAtMaximumException $e) {
+        return;
+    }
 
-try
-
-{
-
-//code that should throw exception
-
+    $this->fail('Expected exception ContainerAtMaximumException');
 }
-
-catch(ContainerAtMaximumException $e)
-
-{
-
-return;
-
-}
-
-$this->fail('Expected exception ContainerAtMaximumException');
-
-}[/php]
+```
 
 I prefer the first method introduced because the comment method seems easy to
 lose in larger test suites and the last method is a lot more typing. Yes, like
@@ -490,40 +463,27 @@ To create the build script we need a PHPUnit task, a Zip task, and the FileSet
 type. We add these tasks inside a build target which will be called,
 creatively, "build."
 
-[xml]<?xml version="1.0" encoding="UTF-8"?>
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
 
 <project basedir="." default="build" name="container">
+    <target name="build" description="Runs the test suite and creates the latest build">
+        <phpunit haltonfailure="true" haltonerror="true">
+            <batchtest>
+                <fileset dir="tests">
+                    <include name="*Test.php" />
+                </fileset>
+            </batchtest>
+        </phpunit>
 
-<target name="build" description="Runs the test suite and creates the latest
-build">
-
-<phpunit haltonfailure="true" haltonerror="true">
-
-<batchtest>
-
-<fileset dir="tests">
-
-<include name="*Test.php" />
-
-</fileset>
-
-</batchtest>
-
-</phpunit>
-
-<zip destfile="builds/build-latest.zip">
-
-<fileset dir="library">
-
-<include name="**/**" />
-
-</fileset>
-
-</zip>
-
-</target>
-
-</project> [/xml]
+        <zip destfile="builds/build-latest.zip">
+            <fileset dir="library">
+                <include name="**/**" />
+            </fileset>
+        </zip>
+    </target>
+</project>
+```
 
 This build file, upon being run by the command "phing build," will run all
 tests inside the directory tests that match the pattern *Test.php. If all
@@ -590,49 +550,29 @@ that is given a schedule property, a modificationset, at least one builder,
 and a success and failure publisher as outlined by the following configuration
 file:
 
-[xml]<?xml version="1.0"?>
-
+``` xml
+<?xml version="1.0"?>
 <xinc engine="Sunrise">
-
-<project name="ExampleProject">
-
-<property name="dir" value="${projectdir}/${project.name}" />
-
-<schedule interval="240" />
-
-<modificationset>
-
-<svn directory="${dir}" update="true" />
-
-</modificationset>
-
-<builders>
-
-<phingbuilder buildfile="${dir}/build.xml" />
-
-</builders>
-
-<publishers>
-
-<onfailure>
-
-<email to="you@email.com" subject="Build failed" message="Build of project
-failed" />
-
-</onfailure>
-
-<onsuccess>
-
-<email to="you@email.com" subject="Build success" message="Build of project
-was successful" />
-
-</onsuccess>
-
-</publishers>
-
-</project>
-
-</xinc>[/xml]
+    <project name="ExampleProject">
+        <property name="dir" value="${projectdir}/${project.name}" />
+        <schedule interval="240" />
+        <modificationset>
+            <svn directory="${dir}" update="true" />
+        </modificationset>
+        <builders>
+            <phingbuilder buildfile="${dir}/build.xml" />
+        </builders>
+        <publishers>
+            <onfailure>
+                <email to="you@email.com" subject="Build failed" message="Build of project failed" />
+            </onfailure>
+            <onsuccess>
+                <email to="you@email.com" subject="Build success" message="Build of project was successful" />
+            </onsuccess>
+        </publishers>
+    </project>
+</xinc>
+```
 
 Starting inside the project element, the first element encountered is a
 property element. Properties become handy to simplify using long or complex
