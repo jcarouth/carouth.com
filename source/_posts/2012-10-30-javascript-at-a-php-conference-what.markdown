@@ -5,6 +5,7 @@ date: 2012-10-30 08:31
 comments: true
 categories: 
 - Conferences
+- JavaScript
 tags:
 - JavaScript
 - ZendCon2012
