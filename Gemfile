@@ -16,4 +16,4 @@ group :development do
   gem 'sass', '3.1.17'
 end
 
-gem 'sinatra', '~> 1.3.3'
+gem 'sinatra', '~> 1.3.5'
