@@ -8,7 +8,7 @@ ssh_user       = "jcarouth@avaris.carouth.net"
 ssh_port       = "22"
 document_root  = "/srv/www/vhosts/carouth.com/"
 rsync_delete   = true
-rsync_args     = ""  # Any extra arguments to pass to rsync
+rsync_args     = "-O"  # Any extra arguments to pass to rsync
 deploy_default = "rsync"
 
 # This will be configured for you when you run config_deploy
