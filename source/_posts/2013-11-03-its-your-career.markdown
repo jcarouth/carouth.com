@@ -5,7 +5,7 @@ date: 2013-11-03 14:53
 comments: true
 categories: Professionalism
 ---
-This post is in the same vain as my previous post about inspiration from conferences being your reposibility, and it was inspired by a conversation that happend on Twitter. A person asked if all the people attending a particular conference were being sent by their companies since this person was planning on paying his own way. This sparked a short conversation about companies sending their employees to conferences as training opportunities and whether this is the company's reponsibility or not.
+This post is in the same vein as my previous post about inspiration from conferences being your reposibility, and it was inspired by a conversation that happend on Twitter. A person asked if all the people attending a particular conference were being sent by their companies since this person was planning on paying his own way. This sparked a short conversation about companies sending their employees to conferences as training opportunities and whether this is the company's reponsibility or not.
 
 ## Build me a house
 
