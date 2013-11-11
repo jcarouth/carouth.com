@@ -17,7 +17,7 @@ The same is true for software developers who get hired at a company based on cod
 
 No. That is not what I'm saying. In fact, I think all employers should understand that software developers must continuously learn and improve. There is a lot of value in conferences for software developers to get involved with the community. However, it is the responsibility of the software developer to continuously learn and therefore directly the responsibility of the developer to get himself or herself to conferences.
 
-So, where does the employers paying for conferences fit in? When an employer is willing to foot the bill to get its developers to conference it is a sign that the employer has embraced reality and understands that developers--and many other professionals as well--simply cannot stagnate on education. A responsible manager, company, and exmployer will understand the benefits of and plan for training their developers.
+So, where does the employers paying for conferences fit in? When an employer is willing to foot the bill to get its developers to conference it is a sign that the employer has embraced reality and understands that developers--and many other professionals as well--simply cannot stagnate on education. A responsible manager, company, and employer will understand the benefits of and plan for training their developers.
 
 ## Take Ownership
 
