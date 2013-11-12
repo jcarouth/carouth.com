@@ -5,11 +5,11 @@ date: 2013-11-03 14:53
 comments: true
 categories: Professionalism
 ---
-This post is in the same vein as my previous post about inspiration from conferences being your reposibility, and it was inspired by a conversation that happend on Twitter. A person asked if all the people attending a particular conference were being sent by their companies since this person was planning on paying his own way. This sparked a short conversation about companies sending their employees to conferences as training opportunities and whether this is the company's reponsibility or not.
+This post is in the same vein as my previous post about inspiration from conferences being your responsibility, and it was inspired by a conversation that happened on Twitter. A person asked if all the people attending a particular conference were being sent by their companies since this person was planning on paying his own way. This sparked a short conversation about companies sending their employees to conferences as training opportunities and whether this is the company's reponsibility or not.
 
 ## Build me a house
 
-Imagine you want to own a house, and you want to hire someone to build it. You hire a person who has photos of houses he or she built before. You are now this person's employer. Now imagine this person tells you that he or she needs you to send him or her to some trianing courses on how to read blueprints and how to operate power tools and the like. Is it your responsibility to pay for the training this builder requires? I imagine you would say no.
+Imagine you want to own a house, and you want to hire someone to build it. You hire a person who has photos of houses he or she built before. You are now this person's employer. Now imagine this person tells you that he or she needs you to send him or her to some training courses on how to read blueprints and how to operate power tools and the like. Is it your responsibility to pay for the training this builder requires? I imagine you would say no.
 
 The same is true for software developers who get hired at a company based on code samples or projects on Github or the like. The employer is not responsible for training the developer on how to to do his or her job better.
 

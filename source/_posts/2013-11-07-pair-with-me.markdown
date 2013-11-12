@@ -15,7 +15,7 @@ You may notice a big, blue botton in the sidebar of this page. That button takes
 
 I would like to be able to say this was my idea. I would like to. But that would be a lie.
 
-Someone who is clearly much more clever than me came up with the idea for [PairProgramWith.me](http://www.pairprogramwith.me/) and I am simply a follower at this point. Simply put this is a nice way to say that I am willing to help--and, frankly, be helped--by setting up some pair programming with the fine folks of the internet. If you take a second to read the site I linked to you will realize that this is imply a gesture. An open invitatioin.
+Someone who is clearly much more clever than me came up with the idea for [PairProgramWith.me](http://www.pairprogramwith.me/) and I am simply a follower at this point. Simply put this is a nice way to say that I am willing to help--and, frankly, be helped--by setting up some pair programming with the fine folks of the internet. If you take a second to read the site I linked to you will realize that this is simply a gesture. An open invitation.
 
 ## How does it work?
 
