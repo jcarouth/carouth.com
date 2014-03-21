@@ -22,7 +22,7 @@ Okay, you caught me. At least some of those bullet points are jokes.
 
 ### Who should slides benefit?
 
-This might seem like a no brainer. The purpose of a slide deck is to serve as a visual grouding for people in the audience. This is why there is much material written in books about speaking focusing on creating the image-to-content link between your slides and your topic. But this is a difficult one with technical content because, often, there must be slides with words or code on them beyond a simple two-word phrase or just an image obtained form searching for Creative Commons-licensed photos on Flickr.
+This might seem like a no brainer. The purpose of a slide deck is to serve as a visual grouding for people in the audience. This is why there is much material written in books about speaking focusing on creating the image-to-content link between your slides and your topic. But this is a difficult one with technical content because, often, there must be slides with words or code on them beyond a simple two-word phrase or just an image obtained from searching for Creative Commons-licensed photos on Flickr.
 
 My opinion on this topic is the slides should be useful to both the audience and the speaker, but they should primarily serve as a focal point to keep the audience engaged. This means that the main points are made by speech and enforced by the visual content of the slides.
 
@@ -40,7 +40,7 @@ What that tells me is I don't necessarily have enough content on the slides to t
 
 #### Death by bullet point
 
-I would be remiss if I did not mention this in a post about slide decks. There are tons of places where linearly-listed data needs to be presented. Most of thos situations do not require a set of bullet points.
+I would be remiss if I did not mention this in a post about slide decks. There are tons of places where linearly-listed data needs to be presented. Most of those situations do not require a set of bullet points.
 
 The problem with bullet points is they often inject a feeling of monotony in people. This is likely because at some point they sat through a presentation where the prsenter simply read the bullet points from their 20-point slide to the audience. The thirty-minute talk probably felt like four hours. When I find myself making bullet points, I look for ways to turn each point into a small sentence and put it in a slide by itself. Because of this I often find myself able to get rid of points because they are all related to one main idea anyway. This leads to more speaking and less reading.
 
