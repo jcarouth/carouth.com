@@ -22,7 +22,7 @@ Okay, you caught me. At least some of those bullet points are jokes.
 
 ### Who should slides benefit?
 
-This might seem like a no brainer. The purpose of a slide deck is to serve as a visual grouding for people in the audience. This is why there is much material written in books about speaking focusing on creating the image-to-content link between your slides and your topic. But this is a difficult one with technical content because, often, there must be slides with words or code on them beyond a simple two-word phrase or just an image obtained from searching for Creative Commons-licensed photos on Flickr.
+This might seem like a no brainer. The purpose of a slide deck is to serve as a visual grounding for people in the audience. This is why there is much material written in books about speaking focusing on creating the image-to-content link between your slides and your topic. But this is a difficult one with technical content because, often, there must be slides with words or code on them beyond a simple two-word phrase or just an image obtained from searching for Creative Commons-licensed photos on Flickr.
 
 My opinion on this topic is the slides should be useful to both the audience and the speaker, but they should primarily serve as a focal point to keep the audience engaged. This means that the main points are made by speech and enforced by the visual content of the slides.
 
@@ -36,7 +36,7 @@ What is the right answer here? I try to write slides that are useful in two cont
 
 This was highlighted in some recent via-Twitter feedback where an attendee of one of my talks told me ["Great slide decks need audio. Your slide deck is great, but better when paired with your words,"](http://twitter.com/rosslarsonWI/status/446384607936528385). That tweet was the catalyst for this post. Thank you, Ross, if you're reading this.
 
-What that tells me is I don't necessarily have enough content on the slides to tell the whole story, or that I rely heavily on my ability to use words and the slides are not a great reminder for people who sat through the talk. There is, and likely will always be, room for improvement from my side. But, honestly, I am happy to have accomplished the goal of making slides that compliment my talk rather than drive it. The story should drive the talk.
+What that tells me is that I don't necessarily have enough content on the slides to tell the whole story, or that I rely heavily on my ability to use words and the slides are not a great reminder for people who sat through the talk. There is, and likely will always be, room for improvement from my side. But, honestly, I am happy to have accomplished the goal of making slides that compliment my talk rather than drive it. The story should drive the talk.
 
 #### Death by bullet point
 
@@ -44,7 +44,7 @@ I would be remiss if I did not mention this in a post about slide decks. There a
 
 The problem with bullet points is they often inject a feeling of monotony in people. This is likely because at some point they sat through a presentation where the prsenter simply read the bullet points from their 20-point slide to the audience. The thirty-minute talk probably felt like four hours. When I find myself making bullet points, I look for ways to turn each point into a small sentence and put it in a slide by itself. Because of this I often find myself able to get rid of points because they are all related to one main idea anyway. This leads to more speaking and less reading.
 
-All that said, bullet points are extremely useful as a resource when reading slides. If your goal is to produce resourceful slides, bullet points should be a staple in your arsenal. That simply is not my style.
+All of that said, bullet points are extremely useful as a resource when reading slides. If your goal is to produce resourceful slides, bullet points should be a staple in your arsenal. That simply is not my style.
 
 ### Memes
 
@@ -62,11 +62,11 @@ After that experience I decided that I wanted people to tweet about something I 
 
 First things first, I have not ever and I do not intend on using a conference-supplied template. I realize this might seem like I'm just being difficult, but my slides are a compliment to my talk, not a branded part of the conference takeaways. As such I want my slides to match my style, and I have yet to find a corporate, conference-supplied template that can do either well.
 
-My advice to conference organizers: if you want to include some sort of branding in slide decks at your conference you should a) provide vector versions of your graphics for use on light and dark backgrounds or b) provide a single slide that is a "thanks to the sponsors" or similiar slide you'd like speakers to include. I do not think this is an unreasonable request, and I don't think I know of any other speakers who would say no. Even still, I would simply make it available and suggested, rather than required.
+My advice to conference organizers: if you want to include some sort of branding in slide decks at your conference you should a) provide vector versions of your graphics for use on light and dark backgrounds or b) provide a single slide that is a "thanks to the sponsors" or similiar slide you'd like speakers to include. I do not think this is an unreasonable request, and I don't think I know of any other speakers who would say no. Even then, I would simply make it available and suggested, rather than required.
 
-On to lighter subjects, I created my own style of slides. I mentioned this earlier but I am not a designer. No, really, I am not good at design. But I gleaned some information and I try to improve my consisistency in fonts, sizes, layouts, etc. over time. That said there is one piece of advice I have not yet addressed in my own decks.
+On to lighter subjects, I created my own style of slides. I mentioned this earlier but I am not a designer. No, really, I am not good at design. But I gleaned some information and I try to improve my consistency in fonts, sizes, layouts, etc. over time. That said there is one piece of advice I have not yet addressed in my own decks.
 
-A talk should be split into sections. Think of them as consumable chunks of your points. It is apparently benficial to audience attention and engagement if you make them aware subconciously of changes between subjects. Currently I try to do this audibly by following the "summarize, explain, reiterate" method within each section, but coupled with a visual change between each section would likely yield some benefits. This can be as simple as alternating background colors between each section of the talk. I intend to try this out in an upcoming talk.
+A talk should be split into sections. Think of them as consumable chunks of your points. It is apparently beneficial to audience attention and engagement if you make them aware subconsciously of changes between subjects. Currently I try to do this audibly by following the "summarize, explain, reiterate" method within each section, but coupled with a visual change between each section this would likely yield some benefits. This can be as simple as alternating background colors between each section of the talk. I intend to try this out in an upcoming talk.
 
 Short answer on this one is it was too tough to find a free theme that helps me accomplish my goals of slide design, so I gave up and made my own master slides and style.
 
@@ -74,7 +74,7 @@ Short answer on this one is it was too tough to find a free theme that helps me 
 
 Slide design is hard. Talk construction is hard. There is tons of advice available in various forms, but ultimately the choice of how your slides look should be a decision you reach based on careful consideration of your own delivery style and the goals you have for your audience rather than what some person says in a blog post on the Internet.
 
-The goals I try to acheive with my slide decks are:
+The goals I try to achieve with my slide decks are:
 
 1. Useful outside of the talk, but only really understandable when coupled with me telling the story;
 2. Limited use of bullet points and shallow use of jokes or memes; and
