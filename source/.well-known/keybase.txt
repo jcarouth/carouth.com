@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/jcarouth
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://carouth.com
+  * I am jcarouth (https://keybase.io/jcarouth) on keybase.
+  * I have a public key with fingerprint 3FEA BC89 9C3A 86A0 44AF  66E0 E5DA D6A0 4D8B D439
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "3feabc899c3a86a044af66e0e5dad6a04d8bd439",
+            "host": "keybase.io",
+            "key_id": "E5DAD6A04D8BD439",
+            "uid": "f157e4b25519cde8e05fd1a77945e000",
+            "username": "jcarouth"
+        },
+        "service": {
+            "hostname": "carouth.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396054341,
+    "expire_in": 157680000,
+    "prev": "21629ce6f11f539005a737ab6460649d50ed193c6fcadd9616467f42762011a2",
+    "seqno": 29,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGbwMvMwMTomXpE7+CvzbyMpw98TGIINpN0rVZKyk+pVLKqVspOBVNpmXnpqUUF
+RZl5JUpWSsZpqYlJyRaWlsnGiRZmiQYmJolpZmapBqmmKYkpIH6KRVKKibGlko5S
+Rn4xSAfQmKTE4lS9zHygGJATn5kCFHU1dXF0MXM0MHGxcHKBqC8FS6QZmpqnmiQZ
+mZoaWianpFqkGpimpRgmmptbmpimGhgYgBQWpxblJeamAlVnJScW5ZeWZCjV6igB
+Rcsyk1NBbgZZDVUBVaCXnJ8L1FpQlF+Sn5yfA5TIKCkpsALpK6ksACksT02KhxoR
+n5SZlwL0NlBDWWpRcWZ+npKVIVBlckkmyExDY0szA1MTYxNDHaXUioLMotT4TJAK
+U3MzC6ALDUDWpJYBjTQyNDOyTE41SzM0TDM1tjQwME00NzZPTDIzMTMwM7FMMTVI
+TTG0NE42S0tOTEmxNDMESpinmRiZmxkZGBomGimBPFWYl69kZWQJdGdiOtDM4sz0
+vMSS0qJUpdpOJhkWBkYmBjZWJlDMMXBxCsDic5+rAEP39TKjjgDT8ob8Qwzi4R3X
+/yqvfe/dIyRtLcY4JXjndIcun9opPnmL4y8Jf6+e8Gr2vJcGafGrZPmnPn/gPfGO
+PvOC1X8qLA8+Cw9ZZiXGY7lZM2xqd+HeAy3Tt6+udJj/p2VFratrdlXxuxU5dY4P
+VJ7uC+1Jjnm37+PfvRyN+QWSyWUcU/lN2qpFtoaqHhPJu3fs9+YII5O3qxWf8vJ1
+zdD9UasSmbtjbemVOKmJl6+L9x6K1c+4+GLvVtHohOQDK35e7VgmauV4dY9ozZ73
+X+bc+3JmuphISd/BvV7Pr/p/fp3cc/7i9suPNz18FZXyfuPfTQlztIQ3KK4qfPGT
+bynv9XP2fQvcH85uc/sQ8fXrAycJu20FZzO3u0bMruMVUuNk6z8U0H+QNfyz+aVL
+yivuHbBokY+c0y0dd+Laif3zrjYvnLSuosiUe4bjXCMt3olN/94z35c1cz3hxjwl
+2uT4hnaf1GMNv7foTHYT2LXtwww+X+9XQV2B8hEMzwWMua6uMa6MaT4XMencDOfI
+dVPqTayShAVUNra8bjmd7+njbOx1u0W5LrA7sfpwHf+dm2aGK5umJcSfTlBPeLEr
+Qn+29xema656V57fnX7q0tv6B6siTJR85hu89Ge6M6ttj9stUZanrSW7o62OpzU+
+bzLc/0r3i+PclnXbU7ffDudcxvZojnL477PpPYu7np+yPL+21Un8ceB3Z30A
+=MZ06
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jcarouth
+
+==================================================================
