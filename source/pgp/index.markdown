@@ -10,9 +10,9 @@ I use PGP and encourage you to as well. This page lists my PGP keys and their fi
 
 ## Active PGP Keys
 
-My active PGP keys are referenced below and are also published on [http://pgp.mit.edu](http://pgp.mit.edu).
+My active PGP keys are referenced below and are also published on [the SKS keyservers](https://sks-keyservers.net/).
 
-[3FEA BC89 9C3A 86A0 44AF  66E0 E5DA D6A0 4D8B D439](http://pgp.mit.edu/pks/lookup?op=get&search=0xE5DAD6A04D8BD439)
+[3FEA BC89 9C3A 86A0 44AF  66E0 E5DA D6A0 4D8B D439](http://hkps.pool.sks-keyservers.net/pks/lookup?op=vindex&search=0xE5DAD6A04D8BD439)
 
 ## Key Signing Policy
 
@@ -27,7 +27,7 @@ If you want me to sign your key here is procedure I wish to follow:
   * The UIDs you want me to sign. It's preferable if at least your primary UID matches your legal name as printed on your photographic ID. I will only sign UIDs you ask me to sign.
 3. If you are also willing to sign my key, I will bring the appropirate documents to comply with this policy.
 4. I will verify the printed fingerprint in your presence.
-5. Upon returning home I will retrieve your key from a public keyserver and verify it matches the fingerprint given to me by you. (Please have your key available via [http://pgp.mit.edu](http://pgp.mit.edu))
+5. Upon returning home I will retrieve your key from a public keyserver and verify it matches the fingerprint given to me by you. (Please have your key available on the SKS keyservers if possible.)
 6. I will sign each UID request and encrypt it to your key, sending only the signature on each UID to the corresponding email address.
 
 Note that I do reserve the right to not sign your key if I am still unsure about your identity. This should be rare, but I will tell you whether you should be able to expect a signed key after we meet.
