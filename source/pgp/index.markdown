@@ -23,10 +23,10 @@ If you want me to sign your key here is procedure I wish to follow:
 1. We meet in person at a pre-arranged time and place.
 2. You bring the following:
   * A printed copy of your key fingeprint (the output of `gpg --fingerprint`). A hand-written copy is acceptable.
-  * A government-issued photographic ID.
+  * A government-issued photographic ID. Preferably two forms of ID, only one of which should be government-issued.
   * The UIDs you want me to sign. It's preferable if at least your primary UID matches your legal name as printed on your photographic ID. I will only sign UIDs you ask me to sign.
 3. If you are also willing to sign my key, I will bring the appropirate documents to comply with this policy.
-4. I will verify the printed fingerprint in your presence.
+4. I will verify your IDs and mark the printed fingerprint in your presence to indicate it came from you.
 5. Upon returning home I will retrieve your key from a public keyserver and verify it matches the fingerprint given to me by you. (Please have your key available on the SKS keyservers if possible.)
 6. I will sign each UID request and encrypt it to your key, sending only the signature on each UID to the corresponding email address.
 
