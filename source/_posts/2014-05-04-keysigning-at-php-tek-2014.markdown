@@ -6,7 +6,7 @@ comments: true
 categories: 
 - GPG/PGP
 ---
-With the introduction of [keybase.io](http://keybase.io), many people, myself included, are being introduced or re-introduced to the idea of cryptographic privacy through encryption and decryption using PGP keys. Keybase.io is nice, but there is an existing world, or Web of Trust that should also be considered. This is espeically true as Keybase.io does not follow the same principles in terms of the Web of Trust and could arguably be competing with the ideas. That argument or discussion is for another day.
+With the introduction of [keybase.io](http://keybase.io), many people, myself included, are being introduced or re-introduced to the idea of cryptographic privacy through encryption and decryption using PGP keys. Keybase.io is nice, but there is an existing world, or Web of Trust that should also be considered. This is especially true as Keybase.io does not follow the same principles in terms of the Web of Trust and could arguably be competing with the ideas. That argument or discussion is for another day.
 
 This post is about my desire to include keysigning at PHP conferences. As [php\[tek\]](http://tek.phparch.com) is the next conference for me, I hope to start there. What I am proposing is an unofficial keysigning event at php[tek] 2014.
 
@@ -17,7 +17,7 @@ There are several existing protocols a keysigning party could follow. There are 
 1. Any interested individuals email me a copy of your public key (details and instructions below).
 2. I will compile these keys into a keyring. From that keyring I will generate a list of participating individuals and bring copies with me to php[tek] 2014.
 3. At a pre-arranged time and place all participating individuals will gather and verify their own fingerprint as well as all identities and fingerprints of the other participants.
-4. After the event and/or after php[tek] particpants will sign and distribute keys they have verified at the event. Please do so before July 31, 2014.
+4. After the event and/or after php[tek] participants will sign and distribute keys they have verified at the event. Please do so before July 31, 2014.
 
 ### How to participate
 
@@ -55,7 +55,7 @@ At the party you will need to know your key size, key id, and key fingerprint. Y
 $ gpg --fingerprint you@example.com
 ```
 
-Alternatively, there is an [online tool](http://openpgp.quelltextlich.at/slip.html) that can generate a set of key fingerprint cards for you. (This assumes your key is available publically via a keyserver.) 
+Alternatively, there is an [online tool](http://openpgp.quelltextlich.at/slip.html) that can generate a set of key fingerprint cards for you. (This assumes your key is available publicly via a keyserver.) 
 
 #### Show up at php[tek] and participate in the keysigning
 
