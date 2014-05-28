@@ -30,7 +30,7 @@ The final verification happens later when I actually go to sign the key. I will 
 
 ### Verifying a key in a group setting
 
-In a group setting, such as a keysigning party, the paper slips are often not requied based on how the party is organized. If keys are submitted ahead of time and printed in a list form verifying that the key matches can be as simple as each person reading off his or her key information. If the key information read aloud matches that person's information on the sheet I consider that good enough as verification.
+In a group setting, such as a keysigning party, the paper slips are often not required based on how the party is organized. If keys are submitted ahead of time and printed in a list form verifying that the key matches can be as simple as each person reading off his or her key information. If the key information read aloud matches that person's information on the sheet I consider that good enough as verification.
 
 The rest of the verification is the same as individual verification.
 
