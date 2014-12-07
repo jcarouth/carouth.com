@@ -1,0 +1,76 @@
+---
+author: jcarouth
+date: '2009-10-14 18:56:02'
+layout: post
+slug: oop-power
+status: publish
+title: Object Oriented Power, err, Programming
+wordpress_id: '95'
+comments: true
+categories:
+- PHP
+---
+
+I started working on integration between three libraries that were not meant
+to work together. Well, I should say they were not developed with this type of
+integration in mind. Naturally there were some roadblocks, but eventually I
+was able to overcome them and create what should be a decently elegant
+solution. But that's a post for another day. This post is targeted at
+developers searching for the purpose of Object Oriented Programming.
+
+I suppose it's not a secret that I make liberal use of the Zend Framework.
+(It's nothing personal Symfony, CodeIgnitor, Django, etc., Zend Framework just
+fits my style!) Part of my integration experiment led me to
+[ZF-7367](http://framework.zend.com/issues/browse/ZF-7367) because I too
+needed to tell the front controller to return the response rather than output
+it. The first instinct is to hack up the copy of the Zend Framework to make
+this work. The patch suggested in the issue gets us part of the way there, but
+we also have to hack on the Zend_Application component including the Bootstrap
+implementation. This would make future upgrades a pain if this feature request
+is rejected, so it's obviously not the best solution.
+
+Thinking about the problem a little deeper I immediately realized that I
+already extend the Zend_Application_Bootstrap_Bootstrap (yes, the naming
+scheme is quite verbose and suffers from a bit of redundant redundancy…) so it
+should not be too difficult to override the run() method to do what I want.
+Let's look at the original run() method inside
+Zend_Application_Bootstrap_Bootstrap.
+
+[php]/** * Run the application * * Checks to see that we have a default
+controller directory. If not, an * exception is thrown. * * If so, it
+registers the bootstrap with the 'bootstrap' parameter of * the front
+controller, and dispatches the front controller. * * @return void * @throws
+Zend_Application_Bootstrap_Exception */ public function run() { $front =
+$this-&gt;getResource('FrontController'); $default =
+$front-&gt;getDefaultModule(); if (null ===
+$front-&gt;getControllerDirectory($default)) { throw new
+Zend_Application_Bootstrap_Exception( 'No default controller directory
+registered with front controller' ); }
+
+$front->setParam('bootstrap', $this); $front->dispatch(); }[/php]
+
+All we really need to do here is configure the front controller instance to
+return the response object which is accomplished using the
+Zend_Controller_Front::returnResponse(bool) method. Inside the application
+bootstrap class we simply use this implementation:
+
+[php] public function run() { $front =
+$this-&gt;getResource('FrontController'); $front->returnResponse(true);
+
+parent::run();
+
+return $front->getResponse(); } [/php]
+
+Now I have the response I need returned from the bootstrap file, but the
+Zend_Application::run() method does not return this value. Here's where what
+I've been rambling about should click. I merely have to override the
+Zend_Application::run() method with one of my own, like so:
+
+[php]class My_Application extends Zend_Application { public function run() {
+return $this->getBootstrap()->run(); } }[/php]
+
+This protects me from hassle when my copy of the Zend Framework needs updates
+or upgrades but still allows for the functionality I needed. In the index.php
+file I switch out all references to Zend_Application with My_Application and
+everything should roll.
+

@@ -1,0 +1,29 @@
+---
+author: jcarouth
+date: '2010-11-11 10:15:24'
+layout: post
+slug: time
+status: publish
+title: 'Why I failed at blogging: time'
+wordpress_id: '202'
+comments: true
+categories:
+- Authorship
+tags:
+- Blogging
+---
+
+This is part 3 of a series. [Read part 2](http://carouth.com/2010/11/10/if- you-write-it-they-wont-come/) or [read part 1](http://carouth.com/2010/11/09/why-i-failed-at-blogging/).
+
+Time. We live our lives constantly checking our watches, clocks and cell phones to figure out how late we are for our next appointment. In the rush of work, exercise, kids, meetings, etc. we often use the phrase, "I don't have time to…" And **I can always say I don't have time to blog. I just don't**.
+
+But I do. I'm lying to myself to justify not having to write what could be a couple-sentence post on my blog.
+
+One very simple strategy for avoiding the time excuse is to **do some pre- writing whenever a topic hits**. Carry around a notebook if you have no other way to get your ideas down. Writing from an outline, or even thoughts scribbled down, is much easier than starting with a blank text editor.
+
+I've decided to **start several drafts as a queue of posts**. As an idea for a post hits me, I'll post it as a draft. When I think there is enough ideas in the post, I'll turn it into coherent thoughts and complete sentences. Add a little fact checking and de-suckification — à la [@ElizabethN](http://twitter.com/ElizabethN) — and what do you know, I've got a full blog post done. All total I probably spent 15–30 minutes on it. I can spare that.
+
+The real breakthrough for me is when I realized that **I don't have to be in "writing mode" to make a great post**. Just flesh a post out. If it's crap, trash it.
+
+There's also the nugget that [@lornajane](http://twitter.com/lornajane) mentioned in her [Day Camp for Developers](http://daycamp4developers.com) talk. She said that one of her top posts is a two-sentence introduction, a two-line snippet, and a single-sentence conclusion. Do you really not have time for that?
+

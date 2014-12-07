@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/jcarouth
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://carouth.com
+  * I am jcarouth (https://keybase.io/jcarouth) on keybase.
+  * I have a public key with fingerprint 3FEA BC89 9C3A 86A0 44AF  66E0 E5DA D6A0 4D8B D439
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.2"
+        },
+        "key": {
+            "fingerprint": "3feabc899c3a86a044af66e0e5dad6a04d8bd439",
+            "host": "keybase.io",
+            "key_id": "E5DAD6A04D8BD439",
+            "uid": "f157e4b25519cde8e05fd1a77945e000",
+            "username": "jcarouth"
+        },
+        "merkle_root": {
+            "ctime": 1414891886,
+            "hash": "fd9161cc11d6ed33a11e4493d82de99f47af12c03ae786e7dc12ff5d6873b287786fd599d1b784b9256b1e57784d0f9928cf220965d731b0f33bfa6fc76e85e8",
+            "seqno": 90793
+        },
+        "service": {
+            "hostname": "carouth.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1414892074,
+    "expire_in": 157680000,
+    "prev": "e83b68fa6c28b32031cfe7fe7693fdbb56379c2e83419cb8e8d4622d9ab21325",
+    "seqno": 39,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+
+owFVkntQFVUcxy/PAoVoeBgqDayWhHRnzz7PXrABvZhlaJHMZCawu+fsvcvj7u3u
+5XEHUUkmspoxFRnL4TE5FI3k+EgwmWJwNJBETSuSmCwQCkYDs0gbkHaJppw5f5zz
+O5/z/f2+v995JyzA4u/3DD5j7fzreJjfl6OSZUP2m0nlhKQhH2ErJ+RCFbu85s4l
+FmHCRhRgnyTq2Kpq8S4NYWu+Hj/HJBMl2KOrmsugSCtvpYiKZBM3Hyuqy4E9bo9q
+ahG0gkVJhoIg0yLkRJJhRIXjMIlZJCLzjKCEGFowJJ2a7r0vKzGrmasiI5rB2tPt
+XDrJ2OFK+z988eyFAlgeMxLFskCQEYaYZBUERJ4XGBaTJGmCOvbMWcqXRY9W7HWa
+9RZhT0EhzvVo2qxp2auaCGAAAwUAIWdUJOpOMwUSAAdkGQDEYUTTIgCYYQQaQQph
+QVAYXlQAJZO0iHnIYR7JgFIUFnGQpyUK8kZQQawgICDxkJEEiuUkgFkjziBSEQQK
+ygpFkQLHIp4GEqnQtKSInCLzHIYshoYFHb/q0gibQPICXWEePSWqjM2yza7NmZvz
+ZpW1IuOJ26N5NVkrNC6cXq/bZlr2+twmWIqlXB23zGrkSqoLGSP7/0yBgd7XDork
+mWQCl7lVD85VTYLlOWh0lzTz4BJDE0Na4qBRtkxBiaZIGsgK5o3FCbSCJInlaF6Q
+KQNjjEFJEEPEcBSFBFGiAE2x/5mkBaNQ0WFo6qrDJXqLPZio2Om/ONDi528JDvI3
+f60lNCTi36882PzQjH0oJmFyb/HQjuZVqepY9LXC7sjhB30drTc6SsWXlpOlOdHV
+DZm2rPWLPuwvnJ74vCuksqkvtOjQmsH0uOymGMdCOkcN3AyaamduNP4xsqY+JS+o
+7bzf2sl7CwK2NIov3k4+eHlZx6U/34hNXd3GnYyGx+G8r9KOJs+frn8rzve4u3XU
+ebAjZubd4aoljfVbrj6cFl/1df++wLzkgpvXhaiecKBT8RPO2PDvXr+IskZ+bLbN
+HMlnp8VbM2nxcPrqgfa+9c8uqGVzzr8yWLs7T+3F5bvafv9isvyn7bFbg1qzWh7I
+2Zw+9Lb8wwrr8O4AvP/QEd+dp/SBXY57Ts+8usRFPR+cmNb3b5Wzt0ddCB0/d+fp
+E10XNhKZenqdqgU/7//kpYzr11KGxxIbuio6RhLAkqZlnaDGvgmF/xJ87DT/xJ6B
+dmHDzZqcupK18R/djfhmon6vtvHXb5ee6qWPHt6XsCfqth7ymP3l6L7Yau9AVnbP
+5LGUpNTvx3yZdxPP9imRZTCioChmasqa+8gnZbYrH+d3T306eqC6a5PdMua7bM3I
+ey68OxG1dEa8sPNs5rn2k8O9g6fem1gavvj0ujCLw77yfV9iRE3+urT+AP/OqvGL
+O0bGwlDRb+3jkY9mXIl2vDazKpsGP5MT+Q3blrP8aqY29PCZdCuISyFaghNXbLu1
+8LPK+ZVJpX8D
+=3A1K
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jcarouth
+
+==================================================================

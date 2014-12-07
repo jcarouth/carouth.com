@@ -1,0 +1,70 @@
+---
+author: jcarouth
+date: '2009-12-24 11:53:32'
+layout: post
+slug: the-2009-wrap-up
+status: publish
+title: The 2009 Wrap Up
+wordpress_id: '146'
+comments: true
+categories:
+- Personal
+tags:
+- '2009'
+- Yearly Wrap Up
+---
+
+A lot happened in 2009. I don't really believe in new year resolutions, but I do develop a list of goals for the future and set a target period in which I'd like to accomplish each goal. I usually end up with 2–3 goals per quarter in the year and then a list of 5–10 five-year goals. This modest list helps me accomplish some of them and not feel like a slacker for only hitting a few items on a list of hundreds.
+
+I'd like to discuss some of the highlights for this past year and, for the first time ever, publicize some of my goals for 2010 and beyond.
+
+## In 2009 I
+
+  1. transitioned to a new position at Texas A&M University;
+  2. authored another article for php|architect;
+  3. participated in the LIVESTRONG Challenge charity bike ride in Austin, TX;
+  4. proposed to Lisa and we are planning our wedding for July 2010; and
+  5. started negotiations for a book I will author in 2010.
+I [blogged about it](http://carouth.com/2009/08/21/new-position-at- texas-a-and-m/) earlier this year, but back in August a friend of mine let me know that he was moving to a new position and this his current position would be vacant. I eagerly took the opportunity to apply for and be hired into that position effective September 1, 2009. Since moving in I've done some work on several projects including working on the so-called mobile web site for Texas A&M University. We have an iPhone and Blackberry application, but we saw a need for a more universally-accessible version of the site.
+
+In October, I participated in Lance Armstrong's LIVESTRONG Challenge charity bike ride in Austin, TX. That is also when I proposed to my fiancé, Lisa, and she accepted. We are working diligently on coordinating all the details for a wedding ceremony — or celebration as the church calls it — on July 3, 2010. So far it's been an experience I will not soon forget.
+
+In late 2008 I [stated](http://twitter.com/jcarouth/status/1046235254) that I'd like to successfully pitch a book idea to a publisher in 2009. Well I was correct that it would be scary. I pitched several ideas, actually, but only one of them was accepted. I'm currently communicating with the acquisitions editor on the specifics, so I will refrain from disclosing any further information until it's appropriate. I'm glad I was able to scratch this item off my goals for 2009 list even if it's just a strike-through in pencil.
+
+## In 2010 I hope to
+
+  * Author and publish my first book;
+  * move into an more "adult" apartment complex;
+  * run my first half marathon;
+  * lose at least 80 pounds;
+  * take a photo a day — the 365 project — for the whole year; and
+  * author a useful blog post per week.
+Obviously the book goal is sort of a carry-over from 2009, but since I'll actually be writing the book in 2010 it's a fine goal. After all, I've heard that the process is quite involved and stressful at times. Given the speed of the proposed delivery schedule I believe the friends that have already gone through this about the stress.
+
+After we get married, Lisa and I plan to get out of the student-focused apartment complex we currently live in and move into a more "adult" complex. We are most excited about the size of the kitchen as we are both foodies and love to cook but our current galley-style kitchen leaves a lot to be desired in terms of usability — especially for more than one cook. We also hope that a garage will be available in the complex as we could definitely use the storage space. With two bicycles and the transition from two apartments into one, we'll need all the room we can get.
+
+At one point in my life — believe it or not — I was an avid runner capable of hitting the roads for a nice 8-mile run in the wee hours of the morning before heading to class or work. These days I'm lucky to make it two miles before I need a walk break. In 2010 I want to change that. With my sister's new interest in running I thought now would be the perfect time to work up to a half marathon, and chose the Big-D Marathon in Dallas, TX on April 11. It's a somewhat realistic goal as we will both go into the race knowing that we aren't shooting for a podium spot, just a finish.
+
+Along with the running goals I need to lose weight. I've started several times but always found excuses to put it off. Well, no more. It's time.
+
+The 365 project is an interesting concept and I need to get back behind the lens. I've probably lost what few skills I had so I hope this endeavor will bring them back.
+
+Finally I hope to be a better citizen by blogging more. This has always been an issue for me and I am taking inspiration from Brandon Savage's dedication to posting at least once a week. I can only hope to be able to find topics to write about and the time to crank the posts out on top of writing the book.
+
+## In the next five years I hope to
+
+  * become a parent with Lisa;
+  * purchase our first home;
+  * find two German Shepherd companions to enhance and protect our growing family; and
+  * kill my 1990 Acura Integra and get behind the wheel of my dream car, whatever it is.
+
+The first two five-year goals are self explanatory. We've already talked about kids and we are in agreement of our preferences for family size and hopefully we will be able to realize those dreams. The home idea is a three-year goal. We will most likely live in the apartment we move into after marriage for two or three years before taking the plunge into home ownership. This will give us time to build up savings for the necessary investment and improvements.
+
+I have always loved the German Shepherd breed, but, given the size of the dogs, we will need ample space for them to be happy. We know we have to wait until we purchase a home to add them to our family, but I hope to be in a position to find them within four years.
+
+My car, as much as a love it sometimes, is on the downward spiral. Truthfully I've wanted to ditch it so many times, but it is a strong Honda car and refuses to die. The plan now is to begin looking for alternate transportation as the odometer continues to creep towards 200,000 miles. I'm thinking that for the immediate future I'll settle on either a new car or something like a Chevrolet Blazer, GMC Equinox, Ford Escape, or similar vehicle until I'm in a better position to get the four-door Jeep with enhancements I have my eye on.
+
+## Merry Christmas and Happy New Year
+
+That about sums up my major accomplishments for 2009 and a glimpse into my planned future. Have a great two holidays!
+
