@@ -41,15 +41,15 @@ I'd wager that most of the time your talk wasn't rejected, it just couldn't be a
 
 Okay, so number 5 isn't a real thing.
 
-The common theme in the rest of the responses is numbers. It's a numbers game most of the time. If you think about a conference organizer has a lot to consider. Pretty high on the list is the budget. There are budgetary consequences to selecting a talk. But beyond that a conference organizer has a responsibility to the attendees to make sure the program is balanced for thier needs. As relevant as your talk is to you, it might not necessarily be to the expected audience.
+The common theme in the rest of the responses is numbers. It's a numbers game most of the time. If you think about it, a conference organizer has a lot to consider. Pretty high on the list is the budget. There are budgetary consequences to selecting a talk. Beyond that, a conference organizer has a responsibility to the attendees to make sure the program is balanced for thier needs. As relevant as your talk is to you, it might not necessarily be to the expected audience.
 
 The bottom line here is that a rejection is not necessarily a reflection of the quality of your submission. I'll say it again. When your talks are rejected it does not mean they are bad ideas. Every speaker will face rejection.
 
 ## Why can't the organizers provide feedback by explaining why they rejected my talk?
 
-This question gets asked a lot. It's definitely a valid question. But the answer is definitely not what you're looking for.
+This question gets asked a lot. It's definitely a valid question. But the answer is likely not what you're looking for.
 
-Most people are looking for something like, "we rejected your talk because you said you were going to cover best practices and you didn't put in the abstract that you were going to cover tabs vs. spaces so we did not accept it." But the answer will likely more along the lines of, "we had 45 5-star talks and 30 speaking slots, yours just didn't make it into the 30." The reasons why your talk wasn't one of the 30 can be very difficult to pin down and may have nothing to do with your abstract at all.
+Most people are looking for something like, "we rejected your talk because you said you were going to cover best practices and you didn't put in the abstract that you were going to cover tabs vs. spaces so we did not accept it." But the answer will likely be more along the lines of, "we had 45 5-star talks and 30 speaking slots, yours just didn't make it into the 30." The reasons why your talk wasn't one of the 30 can be very difficult to pin down and may have nothing to do with your abstract at all.
 
 ## Given that, how do I get the feedback I need?
 
@@ -71,13 +71,13 @@ That said, there are some things that seem to work well for me, and I've seen ot
 
 ### Your abstract should pose a problem and a solution
 
-I don't want to make it seem like there is a formula for a successful abstract, because there isn't. Remember the days of the five-paragraph essay? We don't want to go there. But something that I see in many abstracts of talks at conference is a clearly defined problem space and a proposed solution. Perhaps this is along the lines of "so you're working with legacy code, I have the steps you can use to add some tests," or, "your hitting a wall with performance tuning of your webserver, here is some tips and tricks we used to scale to 10m pageviews." A reviewer should be able to take your abstract and pull out the subject and what they will take away in a short sentence like I did above.
+I don't want to make it seem like there is a formula for a successful abstract, because there isn't. Remember the days of the five-paragraph essay? We don't want to go there. But something that I see in many abstracts of talks at conferences is a clearly defined problem space and a proposed solution. Perhaps this is along the lines of "so you're working with legacy code, I have the steps you can use to add some tests," or, "you're hitting a wall with performance tuning of your webserver, here are some tips and tricks we used to scale to 10m pageviews." A reviewer should be able to take your abstract and pull out the subject and what they will take away in a short sentence like I did above.
 
 ### Submit more than one talk, on more than one subject
 
-This is espeically true if you are going to be travelling to the conference. The more than one subject bit is important as well. Too often subjects you are wanting to talk about are the same subjects others want to talk about. If you only submit one talk and it's about testing, you have some serious competition to defeat. If you're submitting two talks, make them different subjects. Try to make the vastly different. You have the opportunity to edge other speakers out with a strong supporting talk.
+This is especially true if you are going to be travelling to the conference. The more than one subject bit is important as well. Too often, subjects you are wanting to talk about are the same subjects others want to talk about. If you only submit one talk and it's about testing, you have some serious competition to defeat. If you're submitting two talks, make them cover different subjects. Try to make them vastly different. You have the opportunity to edge other speakers out with a strong supporting talk.
 
-Think of this situation: There are 45 five-star talks. The conference organizers are trying to decide between your talk on testing and another speakers talk. Both cover similar ground and both are excellent. But you also have a talk that might be a 4.5-star talk on nginx performance tuning while the other speaker only submitted this talk. You have increased your odds of being selected significantly as they can get two solid talks from you for the one they would have gotten from that other speaker.
+Think of this situation: There are 45 five-star talks. The conference organizers are trying to decide between your talk on testing and another speaker's talk. Both cover similar ground and both are excellent. But you also have a talk that might be a 4.5-star talk on nginx performance tuning while the other speaker only submitted this talk. You have increased your odds of being selected significantly as they can get two solid talks from you for the one they would have gotten from that other speaker.
 
 ### Submit your talks again next year
 
