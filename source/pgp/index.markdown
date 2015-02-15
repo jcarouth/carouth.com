@@ -12,11 +12,9 @@ I use PGP and encourage you to as well. This page lists my PGP keys and their fi
 
 My PGP key is listed below and is also published on [the SKS keyservers](http://hkps.pool.sks-keyservers.net/pks/lookup?op=vindex&search=0xE5DAD6A04D8BD439).
 
-* **Key ID:** [4D8BD439](/.well-known/4D8BD439.txt)
-* **Key type:** RSA
-* **Key size:** 4096
-* **Fingerprint:** 3FEA BC89 9C3A 86A0 44AF  66E0 E5DA D6A0 4D8B D439
-* **Primary User ID:** jcarouth@gmail.com
+{% img /images/pgp-key-4D8BD439.png %}
+
+**Key ID:** [4D8BD439](/.well-known/4D8BD439.txt)
 
 ## Key Signing Policy
 
