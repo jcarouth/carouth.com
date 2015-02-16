@@ -35,7 +35,7 @@ While I agree that on face value these sound managerial in nature, they are, in 
 
 ## What is a Manager?
 
-The difference in a first line manager and a technical lead can be quite subtle, as there is often some overlap since both must deal with some personal and professional development goals of the memebers of the team. For me, the line becomes a little less blury once you give the proper amount of weight to the word "technical" in technical lead.
+The difference in a first line manager and a technical lead can be quite subtle, as there is often some overlap since both must deal with some personal and professional development goals of the memebers of the team. For me, the line becomes a little less blurry once you give the proper amount of weight to the word "technical" in technical lead.
 
 A manager is going to be someone who handles all of the administrative things that come with the territory of having employees. The performance evalution, the hiring paperwork, lobbying for the best corner in the open-concept office space. None of these decisions should happen without input from the tech lead, but the vast majority of these types of tasks fall under the management umbrella.
 
