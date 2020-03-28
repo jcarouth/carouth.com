@@ -5,6 +5,7 @@ date: 2015-02-05 18:34:40 -0600
 comments: true
 categories: 
 - Speaking
+redirect: true
 ---
 You see a tweet about an open call for papers at a conference you've always wanted to attend. You read through the instructions and suggested topics list. You feel like you've got a winning idea. After all, you spent the last year of your life solving the problem and learning this technology.
 

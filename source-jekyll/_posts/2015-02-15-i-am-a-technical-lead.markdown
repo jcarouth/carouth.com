@@ -6,6 +6,7 @@ comments: true
 sharing: true
 categories: 
     - Leadership
+redirect: true
 ---
 I was recently promoted from Senior Software Engineer to Lead Platform Engineer. While I had been performing some of the duties required of this position prior to receiving the promotion there are many aspects of the job that I have yet to discover. At first I thought some of the challenges were unique to my situation and the environment where I work, but, truth-be-told, these are just general problems that other people have faced and solved before me.
 
