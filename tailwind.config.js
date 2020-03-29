@@ -1,6 +1,18 @@
 module.exports = {
   theme: {
     extend: {
+      colors: {
+        'dark-cerulean': '#083d77',
+        'maastrict-blue': '#011627',
+        'rifle-green': '#41463d',
+        'platinum': '#dfe0e2',
+        'light-gray': '#d0ccd0',
+        'ghost-white': '#fbfcff',
+        'mummys-tomb': '#7e9181',
+        'medium-turquoise': '#41d38d',
+        'smoky-black': '#090c08',
+        'mac-orange': '#f2994a',
+      },
       fontFamily: {
         sans: [
           'Nunito Sans'

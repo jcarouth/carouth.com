@@ -24,47 +24,53 @@
         @endif
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-900 leading-normal font-sans">
-        <header class="flex items-center shadow bg-blue-700 border-b h-24 py-4" role="banner">
-            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
-                <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="block h-12 sm:h-16 rounded-full mx-auto mr-3" src="https://avatars3.githubusercontent.com/u/34648?s=460&v=4" alt="{{ $page->siteName }} logo" />
-                        <div>
-                            <h1 class="text-lg md:text-2xl text-gray-200 font-semibold hover:text-white my-0">{{ $page->siteName }}</h1>
-                            <div class="text-sm text-gray-400">{{ $page->siteDescription  }}</div>
-                        </div>
+    <body class="flex flex-col min-h-screen bg-platinum text-smoky-black leading-normal font-sans">
+        <header class="flex items-center h-12 bg-smoky-black text-ghost-white" role="banner">
+            <div class="flex justify-between container max-w-6xl mx-auto px-3">
+                <div class="text-2xl text-ghost-white">
+                    <a href="/">
+                        <img class="h-6 fill-current" src="/assets/img/jc-logo.svg" />
                     </a>
                 </div>
-
-                <div class="flex flex-1 justify-end items-center">
-                    @include('_nav.menu')
-
-                    @include('_nav.menu-toggle')
+                <div class="block h-6">
+                    <div class="inline-block">
+                        <a class="text-ghost-white font-normal" href="/articles">Articles</a>
+                    </div>
                 </div>
             </div>
+                
         </header>
 
-        @include('_nav.menu-responsive')
-
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
+        <main role="main" class="flex-auto">
             @yield('body')
         </main>
 
-        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center list-none">
-                <li class="md:mr-2">
-                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
-                </li>
+        <footer class="bg-smoky-black text-ghost-white text-center text-sm mt-12 pt-10 pb-8" role="contentinfo">
+            <div>
+                <div class="inline-block mx-2 text-4xl">
+                    <a class="text-ghost-white" href="https://twitter.com/jcarouth"><i class="fab fa-twitter fill-current"></i></a>
+                </div>
+                <div class="inline-block mx-2 text-4xl">
+                    <a class="text-ghost-white" href="https://github.com/jcarouth"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="inline-block mx-2 text-4xl">
+                    <a class="text-ghost-white" href="https://linkedin.com/in/jcarouth"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="inline-block mx-2 text-4xl">
+                    <a class="text-ghost-white" href="https://www.instagram.com/jcarouth/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="inline-block mx-2 text-4xl">
+                    <a class="text-ghost-white" href="mailto:jcarouth@gmail.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
 
-                <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
-                </li>
-            </ul>
+            <span class="block mt-8">
+                &copy; 2016&ndash;{{ date('Y') }} Jeff Carouth
+            </span>
         </footer>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
