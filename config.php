@@ -74,6 +74,9 @@ return [
             ->merge(
                 $allPosts->take(10)
             )
+            ->reject(function ($value, $key) use($page) {
+                return $page->getPath() == $value->getPath();
+            })
             ->unique()
             ->take(3);
     }
