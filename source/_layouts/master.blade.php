@@ -49,7 +49,7 @@
             @yield('body')
         </main>
 
-        <footer class="bg-smoky-black text-ghost-white text-center text-sm mt-12 pt-10 pb-8" role="contentinfo">
+        <footer class=" pt-10 pb-8 bg-smoky-black text-ghost-white text-center text-sm" role="contentinfo">
             <div>
                 <div class="inline-block mx-2 text-4xl">
                     <a class="text-ghost-white" href="https://twitter.com/jcarouth"><i class="fab fa-twitter fill-current"></i></a>

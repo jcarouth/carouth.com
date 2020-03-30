@@ -4,7 +4,7 @@ section: content
 title: Signing PGP Keys
 date: 2014-05-25
 featured: true
-categories: []
+categories: [security]
 excerpt: Signatures and trust make PGP keys and the network of keyservers useful. In this post I will walk you through how I sign PGP keys to hopefully help you in your process.
 ---
 At the [php\[tek\] keysigning and PGP open space](http://carouth.com/blog/2014/05/04/keysigning-at-php-tek-2014/) the question of how to actually sign keys came up. I had planned to write this post anyway, but now seems like as good a time as any. What follows is my process for verifying keys and how I go about signing after I've verified.

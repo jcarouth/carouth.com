@@ -58,4 +58,23 @@ return [
     'isActive' => function ($page, $path) {
         return ends_with(trimPath($page->getPath()), trimPath($path));
     },
+    'getRecircPosts' => function ($page, $allPosts) {
+        return collect()
+            ->merge(
+                $allPosts->filter(function ($post) use($page) {
+                    if (!$page->categories || !$post->categories) {
+                        return false;
+                    }
+                    return !empty(array_intersect($page->categories, $post->categories));
+                })
+            )
+            ->merge(
+                $allPosts->where('featured', true)
+            )
+            ->merge(
+                $allPosts->take(10)
+            )
+            ->unique()
+            ->take(3);
+    }
 ];
