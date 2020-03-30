@@ -7,10 +7,14 @@
             <h2 class="text-3xl text-center uppercase sm:mt-10">Page not found.</h2>
         </div>
 
-        <p class="mt-10 pb-10">
+        <p class="mt-10">
             Well isn't this embarassing. The page you wanted to see doesn't exist. This is probably my fault. I moved a lot of stuff around
             when I released this version of my blog. I don't know if I can give you what you are looking for. The best I can do is offer you
             some suggestions of content I do have.
+        </p>
+
+        <p class="mt-4 pb-10">
+            If that doesn't work for you, head <a href="/">back to the homepage</a> or check out a <a href="/articles">full list of articles</a>.
         </p>
     </div>
     @if ($recircs = $page->getRecircPosts($posts))
