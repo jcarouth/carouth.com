@@ -9,13 +9,13 @@ categories: [Blogging, Jigsaw]
 excerpt: In the process of transitioning my blog from Jekyll to Jigsaw I worked on a re-design. One feature I wanted was the ability to recommend relevant and fresh content to readers. To accomplish this I created a helper to pull posts into a recirculation modules. This is how I did it.
 ---
 
-I haven't blogged in a quite a few years. There are a lot of reasons for this which I'll spare you from but one reason was I let the version and set up of my blogging engine [Jekyll]() lapse to the point where it was unusable. I wasn't actually able to blog. This was all my fault as I made several attempts over the years to build in a custom theme and made a bunch of changes to it that I never pushed out. Then it got to the point where I couldn't. A couple friends of mine recently re-launched their blogs in new tech and I got the itch to do that as well. After some research I decided [Jigsaw by Tighten]() was the "platform" I wanted to use.
+I haven't blogged in a quite a few years. There are a lot of reasons for this which I'll spare you from but one reason was I let the version and set up of my blogging engine [Jekyll](https://jekyllrb.com/) lapse to the point where it was unusable. I wasn't actually able to blog. This was all my fault as I made several attempts over the years to build in a custom theme and made a bunch of changes to it that I never pushed out. Then it got to the point where I couldn't. A couple friends of mine recently re-launched their blogs in new tech and I got the itch to do that as well. After some research I decided [Jigsaw by Tighten](https://jigsaw.tighten.co/) was the "platform" I wanted to use.
 
 ## The Reciculation Design
 
-I hope to increase my blog production (don't we all?) so one of the goals I had for this re-design was to think about how to better funnel people to articles I've written. The traditional view of a time-oriented list (an archive) works, but some of what I write I hope to be more evergreen than stuff written specifically for the time period it was written. To accomplish this goal I decided I wanted to include a recirculation module in my post presentation. You can probably see it at the bottom of this post, but here is the basic design I created in [Figma]().
+I hope to increase my blog production (don't we all?) so one of the goals I had for this re-design was to think about how to better funnel people to articles I've written. The traditional view of a time-oriented list (an archive) works, but some of what I write I hope to be more evergreen than stuff written specifically for the time period it was written. To accomplish this goal I decided I wanted to include a recirculation module in my post presentation. You can probably see it at the bottom of this post, but here is the basic design I created in [Figma](https://www.figma.com/).
 
-[img goes here]
+![Screenshot of recirculation design from Figma](/assets/img/posts/adding-recirculation/recirc-figma.png) {.mx-auto}
 
 Talking through the design, I built the idea of a "Post Card" component which would surface on the site to link readers to a post. In this recirculation I wanted to include a barebones presentation of the articles to include the title, the excerpt, and a read button. For content I wanted to include three articles with weighted sources. In order I want recent articles in the same categories as the current post, recent featured articles, and then a fallback of recent articles to fill out the collection.
 
@@ -109,7 +109,7 @@ This led me to an aha moment in how to clean up that implementation. Since `post
 }
 ```
 
-In this "algorithm" I am building a collection using [concat]() onto an empty [Collection]() to add articles by category first, then featured articles, and finally adding 10 articles from the Posts collection. I then go through and reject any Posts in that collection which are the current $page as it would be silly to recirculate someone to the page they are on. Then I de-duplicate the collection using [unique]() and take the first three.
+In this "algorithm" I am building a collection using `concat` onto an empty `Collection` to add articles by category first, then featured articles, and finally adding 10 articles from the Posts collection. I then go through and reject any Posts in that collection which are the current `$page` as it would be silly to recirculate someone to the page they are on. Then I de-duplicate the collection using `unique` and take the first three.
 
 I include this recirculation component at the bottom of my posts page as follows:
 
