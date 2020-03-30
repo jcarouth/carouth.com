@@ -4,7 +4,7 @@ section: content
 title: Signing PGP Keys
 date: 2014-05-25
 featured: true
-categories: [security]
+categories: [Security]
 excerpt: Signatures and trust make PGP keys and the network of keyservers useful. In this post I will walk you through how I sign PGP keys to hopefully help you in your process.
 ---
 At the [php\[tek\] keysigning and PGP open space](http://carouth.com/blog/2014/05/04/keysigning-at-php-tek-2014/) the question of how to actually sign keys came up. I had planned to write this post anyway, but now seems like as good a time as any. What follows is my process for verifying keys and how I go about signing after I've verified.
@@ -58,7 +58,7 @@ The following sections will show the specific commands needed to accomplish this
 
 Importing the key into my keyring is accomplished with the `--import` command. Suppose we are working with a key for UID/email address someone@example.com.
 
-```
+```bash
 gpg --import someone@example.com
 ```
 
@@ -66,13 +66,13 @@ I could, of course, replace the 'someone@example.com' with the key ID, or even i
 
 Now to actually sign, the `--sign-key` command is used.
 
-```
+```bash
 gpg --ask-cert-level --sign-key someone@example.com
 ```
 
 This will bring up the gpg interface which should look as follows:
 
-```
+```bash
 → gpg --ask-cert-level --sign-key someone@example.com
 
 pub  2048R/521A3B7C  created: 2014-03-31  expires: 2018-03-31  usage: SC
@@ -103,7 +103,7 @@ Answer this prompt following your policy. For this example case I will sign with
 
 Entering '3' will then proceed with the signing process.
 
-```
+```bash
 Your selection? (enter `?' for more information): 3
 Are you sure that you want to sign this key with your
 key "Jeff Carouth <jcarouth@gmail.com>" (4D8BD439)
@@ -115,7 +115,7 @@ Really sign? (y/N)
 
 Entering 'y' will prompt you to enter the passphrase for your private key and complete the signing for this single-UID key.
 
-```
+```bash
 Really sign? (y/N) Y
 
 You need a passphrase to unlock the secret key for
@@ -126,7 +126,7 @@ user: "Jeff Carouth <jcarouth@gmail.com>"
 
 Now the key is signed by me. To check this signature you can use `--list-sigs`.
 
-```
+```bash
 → gpg --list-sigs someone@example.com
 gpg: checking the trustdb
 gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
@@ -148,7 +148,7 @@ A key with multiple UIDs slightly complicates this process, because if you sign 
 
 Signing each UID actually follows the same process, but it must be done one time for each UID. The process starts a little differently, in that the first prompt you will see asks if you want to sign all the UIDs.
 
-```
+```bash
 → gpg --sign-key --ask-cert-level someone@example.com
 
 pub  2048R/521A3B7C  created: 2014-03-21  expires: never       usage: SCEA
@@ -161,7 +161,7 @@ Really sign all user IDs? (y/N)
 
 Answering this question 'N' will then give you the 'gpg>' prompt.
 
-```
+```bash
 Really sign all user IDs? (y/N) N
 Hint: Select the user IDs to sign
 
@@ -170,7 +170,7 @@ gpg>
 
 This is where you select the UID, by number, you wish to sign. In our case we will sign the first UID first, so we enter 1.
 
-```
+```bash
 gpg> 1
 
 pub  2048R/521A3B7C  created: 2014-03-21  expires: never       usage: SCEA
@@ -185,7 +185,7 @@ The next step is to tell gpg we want to sign the selected UID with the `sign` co
 
 Now you follow the procedure for exporting and encrypting the public key just as in a single-UID situation. After doing this you want to remove the key from your keyring using the `--delete-key`.
 
-```
+```bash
 → gpg --delete-key someone@example.com
 gpg (GnuPG) 1.4.16; Copyright (C) 2013 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
@@ -207,14 +207,14 @@ My process for distributing a signed key involves exporting the key into ascii-a
 
 The first step in this process is to export the signed public key and then encrypt it for the.
 
-```
+```bash
 gpg --armor --export someone@example.com > ~/tmp/someone_at_example.com.asc
 gpg --sign --encrypt --recipient someone@example.com ~/tmp/someone_at_example.com.asc
 ```
 
 Alternatively, all in one:
 
-```
+```bash
 gpg -a --export someone@example.com | gpg -se -r someone@example.com > ~/tmp/someone_at_example.com.asc.pgp
 ```
 
@@ -228,13 +228,13 @@ The alternative here is to not encrypt the file and simply push it up to a keyse
 
 If you are on the receiving end of this exchange of signed keys you should push the signed key up to the keyserver. But, to do that you must first decrypt it.
 
-```
+```bash
 gpg --decrypt someone_at_example.com.asc.pgp
 ```
 
 Decrypting the file should create one named `someone_at_example.com.asc` which can then be imported into your keychain and pushed to the key server.
 
-```
+```bash
 gpg --import someone_at_example.com.asc
 gpg --send-keys 521A3B7C
 ```

@@ -5,7 +5,7 @@ title: My Proposal Was Rejected, Now What?
 date: 2015-02-05
 description: Submitting to a conference CFP is a brave step. Sometimes your proposal just cannot be accepted. In this post I talk about some of the reasons and takeaways when that happens.
 featured: true
-categories: []
+categories: [Speaking]
 excerpt: Submitting to a conference CFP is a brave step. Sometimes your proposal just cannot be accepted. In this post I talk about some of the reasons and takeaways when that happens.
 ---
 
