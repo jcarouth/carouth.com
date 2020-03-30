@@ -1,13 +1,14 @@
 @extends('_layouts.master')
 
 @push('meta')
-    <meta property="og:title" content="About {{ $page->siteName }}" />
+    <meta property="og:title" content="PGP Key | {{ $page->siteName }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="A little bit about {{ $page->siteName }}" />
+    <meta property="og:description" content="Information about PGP key 4D8BD439 used by Jeff Carouth" />
 @endpush
 
 @section('body')
+<div class="max-w-5xl mx-auto px-10 py-4 bg-ghost-white">
     <h1>PGP Key</h1>
 
     <p class="mb-6">I use PGP and encourage you to as well. This page lists my PGP keys and their fingerprints. However, this page should not be considered an authoritative source; this page is for reference only. Please use a fingerprint obtained in person for signing purposes.</p>
@@ -18,9 +19,9 @@
 
     <img src="/assets/img/pgp-key-4D8BD439.png"
          alt="PGP Key 4D8BD439"
-         class="">
+         class="mx-auto">
 
-    <p class="mb-6"><strong>Key ID:</strong> <a href="/.well-known/4D8BD439.txt">4D8BD439</a></p>
+    <p class="mb-6 text-center"><strong>Key ID:</strong> <a href="/.well-known/4D8BD439.txt">4D8BD439</a></p>
 
     <h2>Key Signing Policy</h2>
 
@@ -61,4 +62,5 @@
     <p class="mb-6">I am willing to sign keys at conferences. If you are interested in getting your key signed by me at a conference where there is no formal (official or otherwise) keysigning event, please contact me via Twitter <a href="https://twitter.com/jcarouth">@jcarouth</a> or email. Twitter is preferable as I will likely be paying more attention to that medium than email. I prefer if you contact me prior to a break (lunch, in-between sessions, the after party, etc.) and arrange for us to meet somewhere where we can get through the verification peacefully.</p>
 
     <p class="mb-6">I will make an effort to sign keys while at the conference, but at a minimum I will sign any keys I've agreed to sign within two weeks of returning home from the conference.</p>
+</div>
 @endsection
