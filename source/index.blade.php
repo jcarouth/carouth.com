@@ -8,7 +8,7 @@
     </div>
     <img class="w-56 h-56 mx-auto -mt-32 border-platinum border-4 rounded-lg" src="https://pbs.twimg.com/profile_images/451352320932999168/CBZuXgB8_400x400.jpeg">
     
-    <div class="max-w-4xl mx-auto px-8">
+    <div class="max-w-4xl mx-auto px-8 pb-10">
         <p class="mt-12 text-center font-serif">
             I am a software engineering manager at Ziff Media Group. I lead teams and develop for the web. I live in Texas with 
             my wife, two children, one dog, and two cats. These are my stories.
