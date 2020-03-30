@@ -60,7 +60,7 @@ return [
     },
     'getRecircPosts' => function ($page, $allPosts) {
         return collect()
-            ->merge(
+            ->concat(
                 $allPosts->filter(function ($post) use($page) {
                     if (!$page->categories || !$post->categories) {
                         return false;
@@ -68,10 +68,10 @@ return [
                     return !empty(array_intersect($page->categories, $post->categories));
                 })
             )
-            ->merge(
+            ->concat(
                 $allPosts->where('featured', true)
             )
-            ->merge(
+            ->concat(
                 $allPosts->take(10)
             )
             ->reject(function ($value, $key) use($page) {
