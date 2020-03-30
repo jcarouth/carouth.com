@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'http://localhost:3000',
+    'baseUrl' => 'http://localhost:8000',
     'production' => false,
     'siteName' => 'Jeff Carouth',
     'siteDescription' => 'Software Engineering Leader',
