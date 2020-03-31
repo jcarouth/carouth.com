@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Adding Reciriculation Helper to Jigsaw Blog
-date: 2020-03-30
+date: 2020-03-31
 description: How to add a recirculation helper to drive readers to relevant/fresh content
 featured: true
 categories: [Blogging, Jigsaw]
