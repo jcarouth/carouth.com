@@ -4,20 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+
+
         <meta name="description" content="{{ $page->meta_description ?? $page->siteDescription }}">
 
+        <meta property="og:site_name" content="Jeff Carouth">
         <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="{{ $page->getUrl() }}"/>
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ $page->getUrl() }}">
         <meta property="og:description" content="{{ $page->siteDescription }}" />
 
-        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@jcarouth">
+        <meta name="twitter:creator" content="@jcarouth">
+        <meta name="twitter:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}">
+        <meta name="twitter:description" content="{{ $page->meta_description ?? $page->siteDescription }}">
+
+        @stack('meta')
 
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="/favicon.png">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
-        @stack('meta')
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->production)
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -30,10 +43,6 @@
             gtag('config', 'UA-2213019-6');
         </script>
         @endif
-
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
     <body class="flex flex-col min-h-screen bg-platinum text-smoky-black leading-normal font-sans">
