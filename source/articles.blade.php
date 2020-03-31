@@ -11,7 +11,6 @@ $page->meta_description = 'Articles written by Jeff Carouth';
 @endphp
 
 @push('meta')
-    <meta property="og:type" content="website" />
 @endpush
 
 @section('body')
