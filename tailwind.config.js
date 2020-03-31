@@ -14,12 +14,9 @@ module.exports = {
         'mac-orange': '#f2994a',
       },
       fontFamily: {
-        sans: [
-          'Nunito Sans'
-        ],
-        mono: [
-          'monospace',
-        ],
+        sans: ['Montserrat', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        serif: ['"Source Serif Pro"','Georgia', 'serif'],
+        mono: ['Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       lineHeight: {
         normal: '1.6',

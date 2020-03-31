@@ -3,7 +3,7 @@
 @section('body')
     <div class="container mx-auto max-w-5xl h-full bg-ghost-white text-smoky-black pt-16 px-8 md:pt-32">
         <div class="text-center">
-            <h1 class="text-5xl font-light leading-none md:text-6xl"><i class="far fa-meh-rolling-eyes"></i> 404</h1>
+            <h1 class="text-5xl leading-none md:text-6xl"><i class="far fa-meh-rolling-eyes"></i> 404</h1>
             <h2 class="text-3xl text-center uppercase sm:mt-10">Page not found.</h2>
         </div>
 

@@ -671,7 +671,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace;
+  font-family: Menlo, Monaco, Consolas, monospace;
 }
 
 /**
@@ -820,6 +820,10 @@ h5 {
 h6 {
   font-weight: 300;
   font-size: 1.125rem;
+}
+
+p {
+  font-family: "Source Serif Pro", Georgia, serif;
 }
 
 hr {
@@ -4550,15 +4554,15 @@ pre code {
 }
 
 .font-sans{
-  font-family: Nunito Sans;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
 }
 
 .font-serif{
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Source Serif Pro", Georgia, serif;
 }
 
 .font-mono{
-  font-family: monospace;
+  font-family: Menlo, Monaco, Consolas, monospace;
 }
 
 .font-hairline{
@@ -16903,15 +16907,15 @@ pre code {
   }
 
   .sm\:font-sans{
-    font-family: Nunito Sans;
+    font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
   }
 
   .sm\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Source Serif Pro", Georgia, serif;
   }
 
   .sm\:font-mono{
-    font-family: monospace;
+    font-family: Menlo, Monaco, Consolas, monospace;
   }
 
   .sm\:font-hairline{
@@ -29247,15 +29251,15 @@ pre code {
   }
 
   .md\:font-sans{
-    font-family: Nunito Sans;
+    font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
   }
 
   .md\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Source Serif Pro", Georgia, serif;
   }
 
   .md\:font-mono{
-    font-family: monospace;
+    font-family: Menlo, Monaco, Consolas, monospace;
   }
 
   .md\:font-hairline{
@@ -41591,15 +41595,15 @@ pre code {
   }
 
   .lg\:font-sans{
-    font-family: Nunito Sans;
+    font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
   }
 
   .lg\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Source Serif Pro", Georgia, serif;
   }
 
   .lg\:font-mono{
-    font-family: monospace;
+    font-family: Menlo, Monaco, Consolas, monospace;
   }
 
   .lg\:font-hairline{
@@ -53935,15 +53939,15 @@ pre code {
   }
 
   .xl\:font-sans{
-    font-family: Nunito Sans;
+    font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
   }
 
   .xl\:font-serif{
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Source Serif Pro", Georgia, serif;
   }
 
   .xl\:font-mono{
-    font-family: monospace;
+    font-family: Menlo, Monaco, Consolas, monospace;
   }
 
   .xl\:font-hairline{

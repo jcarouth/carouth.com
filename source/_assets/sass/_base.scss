@@ -82,6 +82,10 @@ h6 {
     @apply .text-lg;
 }
 
+p {
+    @apply .font-serif;
+}
+
 hr {
     @apply .border-b;
     @apply .border-blue-200;

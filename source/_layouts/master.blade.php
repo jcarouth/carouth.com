@@ -28,7 +28,7 @@
         <link rel="icon" href="/favicon.png">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
