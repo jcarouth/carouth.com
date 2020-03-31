@@ -14,7 +14,7 @@
             my wife, two children, one dog, and two cats. These are my stories.
         </p>
         
-        @foreach ($posts->where('featured', true) as $featuredPost)
+        @foreach ($posts->where('featured', true)->take(2) as $featuredPost)
             <div class="w-full mt-12 bg-ghost-white rounded-lg p-6">
                 <span class="block text-dark-cerulean text-2xl uppercase font-semibold">
                     <i class="fa fa-file-alt"></i>
