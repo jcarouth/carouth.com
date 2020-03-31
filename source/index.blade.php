@@ -1,11 +1,22 @@
 @extends('_layouts.master')
 
+@php
+// Metadata fixup
+$page->meta_description = 'Website of Jeff Carouth, a software engineering leader.';
+@endphp
+
+@push('meta')
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ $page->meta_description }}" />
+@endpush
+
 @section('body')
     <div class="pt-12 pb-40 bg-rifle-green text-ghost-white text-center">
         <span class="block p-0 text-4xl uppercase">Jeff Carouth</span>
         <hr class="block w-32 border-t-4 my-4 mx-auto border-ghost-white">
         <span class="block mt-4 uppercase">Software Engineering Leader</span>
     </div>
+
     <img class="w-56 h-56 mx-auto -mt-32 border-platinum border-4 rounded-lg" src="https://pbs.twimg.com/profile_images/451352320932999168/CBZuXgB8_400x400.jpeg">
     
     <div class="max-w-4xl mx-auto px-8 pb-10">

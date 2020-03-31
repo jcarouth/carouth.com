@@ -1,5 +1,11 @@
 @extends('_layouts.master')
 
+@php
+// Metadata fixup
+$page->title = 'Page not found';
+$page->meta_description = 'The page you requested cannot be found.';
+@endphp
+
 @section('body')
     <div class="container mx-auto max-w-5xl h-full bg-ghost-white text-smoky-black pt-16 px-8 md:pt-32">
         <div class="text-center">

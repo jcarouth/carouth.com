@@ -5,18 +5,18 @@ pagination:
 ---
 @extends('_layouts.master')
 
+@php
+// Metadata fixup
+$page->meta_description = 'Articles written by Jeff Carouth';
+@endphp
+
 @push('meta')
-    <meta property="og:title" content="{{ $page->siteName }} Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="The list of blog posts for {{ $page->siteName }}" />
 @endpush
 
 @section('body')
-    <div class="max-w-5xl mx-auto px-10 py-4 bg-ghost-white">
-        <h1>Articles</h1>
-
-        <hr class="border-b my-6">
+    <div class="max-w-5xl mx-auto px-10 pt-4 pb-12 bg-ghost-white">
+        <h1 class="mt-8 mb-12">Articles</h1>
 
         @foreach ($pagination->items as $post)
         <div class="mt-4 bg-ghost-white rounded-lg border-4 p-6">

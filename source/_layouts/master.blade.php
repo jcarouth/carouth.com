@@ -7,20 +7,20 @@
         <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
 
-        <meta name="description" content="{{ $page->meta_description ?? $page->siteDescription }}">
+        <meta name="description" content="{{ $page->getPageDescription() }}">
 
         <meta property="og:site_name" content="Jeff Carouth">
+        <meta property="og:type" content="{{ $page->meta_type ?? 'website' }}" />
         <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
         <meta property="og:locale" content="en_US">
-        <meta property="og:type" content="website">
         <meta property="og:url" content="{{ $page->getUrl() }}">
-        <meta property="og:description" content="{{ $page->siteDescription }}" />
+        <meta property="og:description" content="{{ $page->getPageDescription() }}">
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@jcarouth">
         <meta name="twitter:creator" content="@jcarouth">
         <meta name="twitter:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}">
-        <meta name="twitter:description" content="{{ $page->meta_description ?? $page->siteDescription }}">
+        <meta name="twitter:description" content="{{ $page->getPageDescription() }}">
 
         @stack('meta')
 

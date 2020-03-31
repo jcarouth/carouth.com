@@ -1,10 +1,14 @@
 @extends('_layouts.master')
 
+@php
+// Metadata fixup
+$page->title = 'PGP Key 4D8BD439';
+$page->meta_description = 'Information about PGP key 4D8BD439 used by Jeff Carouth';
+@endphp
+
 @push('meta')
-    <meta property="og:title" content="PGP Key | {{ $page->siteName }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="Information about PGP key 4D8BD439 used by Jeff Carouth" />
+    <meta property="og:description" content="{{ $page->meta_description }}" />
 @endpush
 
 @section('body')

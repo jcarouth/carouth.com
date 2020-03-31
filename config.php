@@ -55,6 +55,17 @@ return [
             ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
             : $cleaned;
     },
+    'getPageDescription' => function ($page) {
+        if ($page->meta_description) {
+            return $page->meta_description;
+        }
+
+        if ($page->excerpt) {
+            return $page->excerpt;
+        }
+
+        return 'Content available at ' . $page->siteName;
+    },
     'isActive' => function ($page, $path) {
         return ends_with(trimPath($page->getPath()), trimPath($path));
     },

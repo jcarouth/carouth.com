@@ -1,10 +1,12 @@
 @extends('_layouts.master')
 
+@php
+$page->meta_type = 'article';
+@endphp
+
 @push('meta')
-    <meta property="og:title" content="{{ $page->title }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="{{ $page->description }}" />
+<meta property="article:published_time" content="{{ date('c', $page->date) }}"> 
+<meta property="article:modified_time" content="{{ date('c', $page->getModifiedTime()) }}">
 @endpush
 
 @section('body')
