@@ -11,7 +11,7 @@ excerpt: In the process of transitioning my blog from Jekyll to Jigsaw I worked 
 
 I haven't blogged in a quite a few years. There are a lot of reasons for this which I'll spare you from but one reason was I let the version and set up of my blogging engine [Jekyll](https://jekyllrb.com/) lapse to the point where it was unusable. I wasn't actually able to blog. This was all my fault as I made several attempts over the years to build in a custom theme and made a bunch of changes to it that I never pushed out. Then it got to the point where I couldn't. A couple friends of mine recently re-launched their blogs in new tech and I got the itch to do that as well. After some research I decided [Jigsaw by Tighten](https://jigsaw.tighten.co/) was the "platform" I wanted to use.
 
-## The Reciculation Design
+## The Recirculation Design
 
 I hope to increase my blog production (don't we all?) so one of the goals I had for this re-design was to think about how to better funnel people to articles I've written. The traditional view of a time-oriented list (an archive) works, but some of what I write I hope to be more evergreen than stuff written specifically for the time period it was written. To accomplish this goal I decided I wanted to include a recirculation module in my post presentation. You can probably see it at the bottom of this post, but here is the basic design I created in [Figma](https://www.figma.com/).
 
@@ -48,7 +48,7 @@ return [
 ];
 ```
 
-This will allow me to pull the reciculation post collection from a page object.
+This will allow me to pull the recirculation post collection from a page object.
 
 ```php
 $page->getRecircPosts();
