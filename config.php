@@ -1,5 +1,7 @@
 <?php
 
+use Carbon\Carbon;
+
 return [
     'baseUrl' => 'http://localhost:8000',
     'production' => false,
@@ -13,6 +15,13 @@ return [
             'author' => 'Jeff Carouth', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'articles/{filename}',
+            'filter' => function ($post) {
+                if (false === $post->published) {
+                    return false;
+                }
+
+                return Carbon::parse($post->date)->lessThanOrEqualTo(Carbon::now('America/Chicago'));
+            },
         ],
         'categories' => [
             'path' => '/articles/categories/{filename}',

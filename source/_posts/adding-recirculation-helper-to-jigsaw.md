@@ -4,7 +4,7 @@ section: content
 title: Adding Reciriculation Helper to Jigsaw Blog
 date: 2020-03-31
 description: How to add a recirculation helper to drive readers to relevant/fresh content
-featured: true
+featured: false
 categories: [Blogging, Jigsaw]
 excerpt: In the process of transitioning my blog from Jekyll to Jigsaw I worked on a re-design. One feature I wanted was the ability to recommend relevant and fresh content to readers. To accomplish this I created a helper to pull posts into a recirculation modules. This is how I did it.
 ---
