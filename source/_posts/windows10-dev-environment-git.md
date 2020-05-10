@@ -178,9 +178,31 @@ Then tell git to use this executable as the `gpg.program`:
 ```
 PS C:\Users\jcaro\projects\carouth.com> git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
 PS C:\Users\jcaro\projects\carouth.com> git commit -m "Add Win10 git set up post"
-[master 4f1c0ca] Add Win10 git set up post
- 1 file changed, 152 insertions(+)
+[add-win10-git a1375aa] Add Win10 git set up post
+ 1 file changed, 186 insertions(+)
  create mode 100644 source/_posts/windows10-dev-environment-git.md
  ```
 
- At that point I was able to update this post and hopefully push the changes.
+ At that point I was able to update this post and push the changes.
+
+ ```
+ PS C:\Users\jcaro\projects\carouth.com> git push origin add-win10-git
+Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 5.71 KiB | 5.71 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'add-win10-git' on GitHub by visiting:
+remote:      https://github.com/jcarouth/carouth.com/pull/new/add-win10-git
+remote:
+To github.com:jcarouth/carouth.com.git
+ * [new branch]      add-win10-git -> add-win10-git
+ ```
+
+ ## Git set up in PowerShell Success
+
+Overall I am satisified with this configuration/set up. While it isn't quite as seamless a transition from OS X to PowerShell in Windows 10 I think it is workable. Hopefully this will help someone else moving to Windows 10 if they want a similar experience. The next step for me is to figure out if this works seamlessly with VS Code and/or other editors/IDEs like PHPStorm or RubyMine.
