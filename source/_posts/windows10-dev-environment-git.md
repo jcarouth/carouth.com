@@ -5,7 +5,7 @@ title: "Windows 10 Development Environment: Setting up Git"
 date: 2020-05-10
 description: 
 featured: true
-categories: [Development, Windows10]
+categories: [Development, Windows10, git, PGP]
 excerpt: I haven't really used Windows since 2008 or so but I recently built a new PC and wanted to see what it would be like to work on Windows. This article covers how I set up git natively in PowerShell.
 published: true
 ---
