@@ -1,12 +1,13 @@
 ---
 extends: _layouts.post
 section: content
-title: "Windows10 Development Environment: Setting up Git"
-date: 2020-05-11
+title: "Windows 10 Development Environment: Setting up Git"
+date: 2020-05-10
 description: 
 featured: true
 categories: [Development, Windows10]
 excerpt: I haven't really used Windows since 2008 or so but I recently built a new PC and wanted to see what it would be like to work on Windows. This article covers how I set up git natively in PowerShell.
+published: true
 ---
 I recently built a PC for myself and decided that after a long time of not using Windows I would give it a shot. I think I switched to a Linux desktop around the time Vista came out and have been using Linux and OS X professionally and personally since then. Over the summer of 2019 I played around with building a development environment on a computer I was setting up for my son, but didn't give it the attention it needed and abandoned that project quickly. Fast forward to today and I have a machine I'd like to build into a usable environment for me so I wanted to do things "right." The first order of business is to have the ability to write this blog.
 
@@ -203,6 +204,6 @@ To github.com:jcarouth/carouth.com.git
  * [new branch]      add-win10-git -> add-win10-git
  ```
 
- ## Git set up in PowerShell Success
+ ## Git set up in PowerShell: Success
 
 Overall I am satisified with this configuration/set up. While it isn't quite as seamless a transition from OS X to PowerShell in Windows 10 I think it is workable. Hopefully this will help someone else moving to Windows 10 if they want a similar experience. The next step for me is to figure out if this works seamlessly with VS Code and/or other editors/IDEs like PHPStorm or RubyMine.
