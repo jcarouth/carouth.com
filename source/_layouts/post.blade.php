@@ -5,7 +5,7 @@ $page->meta_type = 'article';
 @endphp
 
 @push('meta')
-<meta property="article:published_time" content="{{ date('c', $page->date) }}"> 
+<meta property="article:published_time" content="{{ date('c', $page->date) }}">
 <meta property="article:modified_time" content="{{ date('c', $page->getModifiedTime()) }}">
 @endpush
 
