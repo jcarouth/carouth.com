@@ -229,7 +229,7 @@ The alternative here is to not encrypt the file and simply push it up to a keyse
 If you are on the receiving end of this exchange of signed keys you should push the signed key up to the keyserver. But, to do that you must first decrypt it.
 
 ```bash
-gpg --decrypt someone_at_example.com.asc.pgp
+gpg --decrypt someone_at_example.com.asc.pgp > someone_at_example.com.asc
 ```
 
 Decrypting the file should create one named `someone_at_example.com.asc` which can then be imported into your keychain and pushed to the key server.
@@ -240,6 +240,13 @@ gpg --send-keys 521A3B7C
 ```
 
 Now your UID(s) which were signed in that file should be updated on the key servers. Note that you can do this any number of times and it won't overwrite your key, it will simply update it. So if you have, for exmaple, three UIDs and you get three separate key files to three different emails, you can run this import and send-keys process for each one, or you can import them all and then send afterwards.
+
+Alternatively you could avoid the transient state of the key by importing directly from the decrypt step:
+
+```bash
+gpg --decrypt someone_at_example.com.asc.pgp | pgp --import
+gpg --send-keys 521A3B7C
+```
 
 ## Fin
 
