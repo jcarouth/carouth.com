@@ -182,12 +182,12 @@ PS C:\Users\jcaro\projects\carouth.com> git commit -m "Add Win10 git set up post
 [add-win10-git a1375aa] Add Win10 git set up post
  1 file changed, 186 insertions(+)
  create mode 100644 source/_posts/windows10-dev-environment-git.md
- ```
+```
 
  At that point I was able to update this post and push the changes.
 
- ```
- PS C:\Users\jcaro\projects\carouth.com> git push origin add-win10-git
+```
+PS C:\Users\jcaro\projects\carouth.com> git push origin add-win10-git
 Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
 Enumerating objects: 8, done.
 Counting objects: 100% (8/8), done.
@@ -202,8 +202,8 @@ remote:      https://github.com/jcarouth/carouth.com/pull/new/add-win10-git
 remote:
 To github.com:jcarouth/carouth.com.git
  * [new branch]      add-win10-git -> add-win10-git
- ```
+```
 
- ## Git set up in PowerShell: Success
+## Git set up in PowerShell: Success
 
 Overall I am satisified with this configuration/set up. While it isn't quite as seamless a transition from OS X to PowerShell in Windows 10 I think it is workable. Hopefully this will help someone else moving to Windows 10 if they want a similar experience. The next step for me is to figure out if this works seamlessly with VS Code and/or other editors/IDEs like PHPStorm or RubyMine.
