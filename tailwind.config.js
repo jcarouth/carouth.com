@@ -1,4 +1,23 @@
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  purge: {
+    content: [
+      'source/**/*.html',
+      'source/**/*.md',
+      'source/**/*.js',
+      'source/**/*.php',
+      'source/**/*.vue',
+    ],
+    options: {
+      whitelist: [
+        /language/,
+        /hljs/,
+        /mce/,
+      ],
+    },
+  },
   theme: {
     extend: {
       colors: {
