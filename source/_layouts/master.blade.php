@@ -28,8 +28,24 @@
         <link rel="icon" href="/favicon.png">
         <link href="/articles/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
+        <script>
+            WebFontConfig = {
+                google: {
+                    families: [
+                        'Montserrat:300,400,600,800',
+                        'Source+Serif+Pro:400,600,700',
+                    ]
+                }
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf,s);
+            })();
+        </script>
+        <script async src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->production)
@@ -42,6 +58,7 @@
 
             gtag('config', 'UA-2213019-6');
         </script>
+
         @endif
     </head>
 
@@ -50,7 +67,7 @@
             <div class="flex justify-between container max-w-6xl mx-auto px-3">
                 <div class="text-2xl text-ghost-white">
                     <a href="/">
-                        <img class="h-6 fill-current" src="/assets/img/jc-logo.svg" />
+                        <img class="h-6 fill-current" src="/assets/img/jc-logo.svg" alt="JC logo" />
                     </a>
                 </div>
                 <div class="block h-6">
@@ -69,19 +86,19 @@
         <footer class=" pt-10 pb-8 bg-smoky-black text-ghost-white text-center text-sm" role="contentinfo">
             <div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="https://twitter.com/jcarouth"><i class="fab fa-twitter fill-current"></i></a>
+                    <a class="text-ghost-white" href="https://twitter.com/jcarouth" aria-label="@jcarouth on Twitter"><i class="fab fa-twitter fill-current"></i></a>
                 </div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="https://github.com/jcarouth"><i class="fab fa-github"></i></a>
+                    <a class="text-ghost-white" href="https://github.com/jcarouth" aria-label="jcarouth on Github"><i class="fab fa-github"></i></a>
                 </div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="https://linkedin.com/in/jcarouth"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-ghost-white" href="https://linkedin.com/in/jcarouth" aria-label="jcarouth profile on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="https://www.instagram.com/jcarouth/"><i class="fab fa-instagram"></i></a>
+                    <a class="text-ghost-white" href="https://www.instagram.com/jcarouth/" aria-label="jcarouth on Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="mailto:jcarouth@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a class="text-ghost-white" href="mailto:jcarouth@gmail.com" aria-label="Email Jeff Carouth"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
 

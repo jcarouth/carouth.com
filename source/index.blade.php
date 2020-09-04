@@ -17,7 +17,9 @@ $page->meta_description = 'Website of Jeff Carouth, a software engineering leade
         <span class="block mt-4 uppercase">Software Engineering Leader</span>
     </div>
 
-    <img class="w-56 h-56 mx-auto -mt-32 border-platinum border-4 rounded-lg" src="https://pbs.twimg.com/profile_images/451352320932999168/CBZuXgB8_400x400.jpeg">
+    <img class="w-56 h-56 mx-auto -mt-32 border-platinum border-4 rounded-lg"
+        src="https://pbs.twimg.com/profile_images/451352320932999168/CBZuXgB8_400x400.jpeg"
+        alt="Black and white profile photo of Jeff Carouth">
 
     <div class="max-w-4xl mx-auto px-8 pb-10">
         <p class="mt-12 text-center font-serif">
