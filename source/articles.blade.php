@@ -15,33 +15,38 @@ $page->template = 'content_hub';
 @endpush
 
 @section('body')
-    <div class="max-w-5xl mx-auto px-10 pt-4 pb-12 bg-ghost-white">
+    <div class="max-w-5xl mx-auto px-10 pt-4 pb-12 bg-ghost-white" >
         <h1 class="mt-8 mb-12">Articles</h1>
 
         @foreach ($pagination->items as $post)
-        <div class="mt-4 bg-ghost-white rounded-lg border-4 p-6">
+        <div class="mt-4 bg-ghost-white rounded-lg border-4 p-6" data-ga-element="post_card">
             <h2 class="text-3xl mt-2 leading-tight">
-                <a href="{{ $post->getUrl() }}" title="Read {{ $post->title }}" class="">
+                <a href="{{ $post->getUrl() }}" title="Read {{ $post->title }}" data-ga-click data-ga-item="title">
                     {{ $post->title }}
                 </a>
             </h2>
 
             <p class="mt-6">{!! $post->getExcerpt() !!}</p>
 
-            <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg" href="{{ $post->getUrl() }}" title="Read - {{ $post->title }}">
+            <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                href="{{ $post->getUrl() }}"
+                title="Read - {{ $post->title }}"
+                data-ga-click data-ga-item="button"
+            >
                 Read Post
             </a>
         </div>
         @endforeach
 
         @if ($pagination->pages->count() > 1)
-        <div class="flex justify-center">
+        <div class="flex justify-center" data-ga-element="pagination_nav">
             <nav class="flex text-base my-8 mx-auto">
                 @if ($previous = $pagination->previous)
                     <a
                         href="{{ $previous }}"
                         title="Previous Page"
                         class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
+                        data-ga-click data-ga-item="link"
                     >&LeftArrow;</a>
                 @endif
 
@@ -50,6 +55,7 @@ $page->template = 'content_hub';
                         href="{{ $path }}"
                         title="Go to Page {{ $pageNumber }}"
                         class="bg-gray-200 hover:bg-gray-400 text-blue-700 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}"
+                        data-ga-click data-ga-item="link"
                     >{{ $pageNumber }}</a>
                 @endforeach
 
@@ -58,6 +64,7 @@ $page->template = 'content_hub';
                         href="{{ $next }}"
                         title="Next Page"
                         class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
+                        data-ga-click data-ga-item="link"
                     >&RightArrow;</a>
                 @endif
             </nav>

@@ -21,23 +21,27 @@ $page->template = 'error_404';
         </p>
 
         <p class="mt-4 pb-10">
-            If that doesn't work for you, head <a href="/">back to the homepage</a> or check out a <a href="/articles">full list of articles</a>.
+            If that doesn't work for you, head <a href="/" data-ga-element="body_link">back to the homepage</a> or check out a <a href="/articles" data-ga-element="body_link">full list of articles</a>.
         </p>
     </div>
     @if ($recircs = $page->getRecircPosts($posts))
-    <div class="max-w-5xl mx-auto px-6 py-10">
+    <div class="max-w-5xl mx-auto px-6 py-10" data-ga-element="recirculation">
         <div class="md:flex">
             @foreach ($recircs as $recircPost)
             <div class="mt-4 bg-ghost-white rounded-lg p-6 md:w-1/3 md:mx-3">
                 <h2 class="text-3xl mt-2 leading-tight">
-                    <a href="{{ $recircPost->getUrl() }}" title="Read {{ $recircPost->title }}" class="">
+                    <a href="{{ $recircPost->getUrl() }}" title="Read {{ $recircPost->title }}" class="" data-ga-item="title">
                         {{ $recircPost->title }}
                     </a>
                 </h2>
 
                 <p class="mt-6">{!! $recircPost->getExcerpt() !!}</p>
 
-                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg" href="{{ $recircPost->getUrl() }}" title="Read - {{ $recircPost->title }}">
+                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                    href="{{ $recircPost->getUrl() }}"
+                    title="Read - {{ $recircPost->title }}"
+                    data-ga-item="button"
+                >
                     Read Post
                 </a>
             </div>
