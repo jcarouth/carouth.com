@@ -1,5 +1,9 @@
 @extends('_layouts.master')
 
+@php
+$page->template = 'content_hub';
+@endphp
+
 @push('meta')
     <meta property="og:type" content="website" />
     <meta property="og:description" content="{{ $page->description }}" />

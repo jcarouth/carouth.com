@@ -4,6 +4,7 @@
 // Metadata fixup
 $page->title = 'PGP Key 4D8BD439';
 $page->meta_description = 'Information about PGP key 4D8BD439 used by Jeff Carouth';
+$page->template = 'page';
 @endphp
 
 @push('meta')

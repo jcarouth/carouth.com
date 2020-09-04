@@ -4,6 +4,7 @@
 // Metadata fixup
 $page->title = 'Page not found';
 $page->meta_description = 'The page you requested cannot be found.';
+$page->template = 'error_404';
 @endphp
 
 @section('body')
