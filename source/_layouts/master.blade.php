@@ -56,7 +56,7 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-2213019-6', {
-                'dimension1': document.querySelector('body[data-ga-template]').dataset.gaTemplate || null,
+                'dimension1': '{{ $page->template ?? 'null' }}',
             });
         </script>
         @endif
