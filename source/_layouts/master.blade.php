@@ -49,21 +49,21 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->production)
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2213019-6"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'UA-2213019-6');
+            gtag('config', 'UA-2213019-6', {
+                'dimension1': document.querySelector('body[data-ga-template]').dataset.gaTemplate || null,
+            });
         </script>
-
         @endif
     </head>
 
-    <body class="flex flex-col min-h-screen bg-platinum text-smoky-black leading-normal font-sans">
-        <header class="flex items-center h-12 bg-smoky-black text-ghost-white" role="banner">
+    <body class="flex flex-col min-h-screen bg-platinum text-smoky-black leading-normal font-sans" data-ga-template="{{ $page->template }}">
+        <header class="flex items-center h-12 bg-smoky-black text-ghost-white" role="banner" data-ga-module="header">
             <div class="flex justify-between container max-w-6xl mx-auto px-3">
                 <div class="text-2xl text-ghost-white">
                     <a href="/">
@@ -79,11 +79,11 @@
 
         </header>
 
-        <main role="main" class="flex-auto">
+        <main role="main" class="flex-auto" data-ga-module="body">
             @yield('body')
         </main>
 
-        <footer class=" pt-10 pb-8 bg-smoky-black text-ghost-white text-center text-sm" role="contentinfo">
+        <footer class="pt-10 pb-8 bg-smoky-black text-ghost-white text-center text-sm" role="contentinfo" data-ga-module="footer">
             <div>
                 <div class="inline-block mx-2 text-4xl">
                     <a class="text-ghost-white" href="https://twitter.com/jcarouth" aria-label="@jcarouth on Twitter"><i class="fab fa-twitter fill-current"></i></a>

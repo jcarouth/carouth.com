@@ -8,6 +8,7 @@ pagination:
 @php
 // Metadata fixup
 $page->meta_description = 'Articles written by Jeff Carouth';
+$page->template = 'content_hub';
 @endphp
 
 @push('meta')

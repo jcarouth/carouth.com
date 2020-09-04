@@ -1,8 +1,8 @@
 @extends('_layouts.master')
 
 @php
-// Metadata fixup
 $page->meta_description = 'Website of Jeff Carouth, a software engineering leader.';
+$page->template = 'homepage';
 @endphp
 
 @push('meta')

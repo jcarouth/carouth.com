@@ -2,6 +2,7 @@
 
 @php
 $page->meta_type = 'article';
+$page->template = 'post';
 @endphp
 
 @push('meta')
