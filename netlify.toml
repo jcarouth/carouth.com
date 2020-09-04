@@ -2,3 +2,8 @@
 command = "npm run production"
 publish = "build_production"
 environment = { PHP_VERSION = "7.4" }
+
+[[redirects]]
+from = "/*"
+to = "/404/index.html"
+status = 404
