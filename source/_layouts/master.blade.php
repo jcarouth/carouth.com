@@ -33,7 +33,7 @@
                 google: {
                     families: [
                         'Montserrat:300,400,600,800',
-                        'Source+Serif+Pro:400,600,700',
+                        'Source+Serif+Pro:400,600,700&display=swap',
                     ]
                 }
             };
