@@ -28,7 +28,7 @@ $page->template = 'homepage';
         </p>
 
         @foreach ($posts->where('featured', true)->take(2) as $featuredPost)
-            <div class="w-full mt-12 bg-ghost-white rounded-lg p-6">
+            <div class="w-full mt-12 bg-ghost-white rounded-lg p-6" data-ga-click data-ga-element="post_card">
                 <span class="block text-dark-cerulean text-2xl uppercase font-semibold">
                     <i class="fa fa-file-alt"></i>
                     Blog
@@ -42,14 +42,18 @@ $page->template = 'homepage';
                 </p>
 
                 <h2 class="text-3xl mt-2 leading-tight">
-                    <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="">
+                    <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="" data-ga-click data-ga-item="title">
                         {{ $featuredPost->title }}
                     </a>
                 </h2>
 
                 <p class="mt-8">{!! $featuredPost->getExcerpt() !!}</p>
 
-                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg" href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}">
+                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                    href="{{ $featuredPost->getUrl() }}"
+                    title="Read - {{ $featuredPost->title }}"
+                    data-ga-click data-ga-item="button"
+                >
                     Read Post
                 </a>
             </div>

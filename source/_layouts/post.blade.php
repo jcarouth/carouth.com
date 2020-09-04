@@ -26,7 +26,7 @@ $page->template = 'post';
         <nav class="flex justify-between text-sm md:text-base">
             <div>
                 @if ($next = $page->getNext())
-                    <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
+                    <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" data-ga-click data-ga-element="post_navigation" data-ga-item="title">
                         &LeftArrow; {{ $next->title }}
                     </a>
                 @endif
@@ -34,7 +34,7 @@ $page->template = 'post';
 
             <div>
                 @if ($previous = $page->getPrevious())
-                    <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
+                    <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}" data-ga-click data-ga-element="post_navigation" data-ga-item="title">
                         {{ $previous->title }} &RightArrow;
                     </a>
                 @endif
@@ -49,14 +49,21 @@ $page->template = 'post';
             @foreach ($recircs as $recircPost)
             <div class="mt-4 bg-ghost-white rounded-lg p-6 md:w-1/3 md:mx-3">
                 <h2 class="text-3xl mt-2 leading-tight">
-                    <a href="{{ $recircPost->getUrl() }}" title="Read {{ $recircPost->title }}" class="">
+                    <a href="{{ $recircPost->getUrl() }}"
+                        title="Read {{ $recircPost->title }}"
+                        data-ga-click data-ga-element="recirculation_link" data-ga-item="title"
+                    >
                         {{ $recircPost->title }}
                     </a>
                 </h2>
 
                 <p class="mt-6">{!! $recircPost->getExcerpt() !!}</p>
 
-                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg" href="{{ $recircPost->getUrl() }}" title="Read - {{ $recircPost->title }}">
+                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                    href="{{ $recircPost->getUrl() }}"
+                    title="Read - {{ $recircPost->title }}"
+                    data-ga-click data-ga-element="recirculation_link" data-ga-item="button"
+                >
                     Read Post
                 </a>
             </div>
