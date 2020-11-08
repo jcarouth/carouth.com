@@ -4,6 +4,16 @@ publish = "build_production"
 environment = { PHP_VERSION = "7.4" }
 
 [[redirects]]
+from = "/blog/2014/05/25/signing-pgp-keys/"
+to = "/articles/signing-pgp-keys/"
+status = 301
+
+[[redirects]]
+from = "/blog/2015/02/05/my-proposal-was-rejected/"
+to = "/articles/my-proposal-was-rejected/"
+status = 301
+
+[[redirects]]
 from = "/*"
 to = "/404/index.html"
 status = 404
