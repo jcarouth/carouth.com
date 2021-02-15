@@ -4,6 +4,7 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
   && add-apt-repository -y ppa:ondrej/php \
   && install_clean \
     git \
+    nginx \
     nodejs \
     php8.0-bcmath \
     php8.0-cli \
@@ -20,8 +21,9 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
 
 COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
 
+COPY docker/etc /etc/
+RUN chmod +x /etc/service/*/run
+
 WORKDIR /app
 
 CMD [ "/sbin/my_init" ]
-
-EXPOSE 8000
