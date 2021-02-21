@@ -50,16 +50,14 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->production)
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2213019-6"></script>
-        <script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC6CXHYETJ"></script>
+          <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'UA-2213019-6', {
-                'dimension1': '{{ $page->template ?? 'null' }}',
-            });
-        </script>
+            gtag('config', 'G-KC6CXHYETJ');
+          </script>
         @endif
     </head>
 
