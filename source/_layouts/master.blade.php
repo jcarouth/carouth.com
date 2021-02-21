@@ -16,11 +16,12 @@
         <meta property="og:url" content="{{ $page->getUrl() }}">
         <meta property="og:description" content="{{ $page->getPageDescription() }}">
 
-        <meta name="twitter:card" content="summary">
+        <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@jcarouth">
         <meta name="twitter:creator" content="@jcarouth">
         <meta name="twitter:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}">
         <meta name="twitter:description" content="{{ $page->getPageDescription() }}">
+        <meta name="twitter:image" content="{{ $page->baseUrl }}/assets/img/social/twitter-cards/{{ $page->twitter_image ?? 'default.png' }}">
 
         @stack('meta')
 
@@ -72,7 +73,7 @@
                 </div>
                 <div class="block h-6">
                     <div class="inline-block">
-                        <a class="text-ghost-white font-normal" href="/articles" data-ga-click data-ga-element="header_link">Articles</a>
+                        <a class="text-ghost-white font-normal" href="/articles/" data-ga-click data-ga-element="header_link">Articles</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +107,7 @@
             </span>
         </footer>
 
-        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
         @stack('scripts')
     </body>
