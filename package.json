@@ -11,19 +11,19 @@
     "axios": "^0.21.1",
     "cross-env": "^3.2.3",
     "fuse.js": "^3.6.1",
-    "highlight.js": "^10.4.1",
-    "laravel-mix": "^5.0.5",
-    "laravel-mix-jigsaw": "^1.0.0",
+    "highlight.js": "^10.6.0",
+    "laravel-mix": "^5.0.9",
+    "laravel-mix-jigsaw": "^1.5.0",
     "minimist": ">=1.2.3",
-    "sass": "^1.26.10",
+    "sass": "^1.32.8",
     "sass-loader": "^7.1.0",
-    "tailwindcss": "^1.7.6",
+    "tailwindcss": "^1.9.6",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "socket.io": "^2.4.0",
+    "node-forge": "^0.10.0",
     "node-notifier": "^8.0.1",
-    "node-forge": "^0.10.0"
+    "socket.io": "^2.4.1"
   }
 }
