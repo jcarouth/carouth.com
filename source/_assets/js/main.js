@@ -3,7 +3,7 @@ import { trackGaClick } from './listeners/gaClick';
 window.axios = require('axios');
 window.fuse = require('fuse.js');
 
-import hljs from 'highlight.js/lib/highlight';
+import hljs from 'highlight.js/lib/core';
 
 // Syntax highlighting
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
@@ -17,7 +17,7 @@ hljs.registerLanguage('scss', require('highlight.js/lib/languages/scss'));
 hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 
 document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightBlock(block);
+  hljs.highlightBlock(block);
 });
 
 window.addEventListener('DOMContentLoaded', (e) => {
