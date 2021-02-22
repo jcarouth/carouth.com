@@ -61,7 +61,7 @@
         @endif
     </head>
 
-    <body class="flex flex-col min-h-screen bg-platinum text-smoky-black leading-normal font-sans" data-ga-template="{{ $page->template }}">
+    <body class="flex flex-col min-h-screen bg-ghost-white text-smoky-black leading-normal font-sans" data-ga-template="{{ $page->template }}">
         <header class="flex items-center h-12 bg-smoky-black text-ghost-white" role="banner" data-ga-module="header">
             <div class="flex justify-between container max-w-6xl mx-auto px-3">
                 <div class="text-2xl text-ghost-white">
@@ -77,7 +77,7 @@
             </div>
         </header>
 
-        <main role="main" class="flex-auto" data-ga-module="body">
+        <main role="main" class="h-full mb-auto" data-ga-module="body">
             @yield('body')
         </main>
 

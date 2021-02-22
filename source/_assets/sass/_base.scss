@@ -123,6 +123,12 @@ p {
     }
 }
 
+.post-content {
+  p {
+    @apply max-w-3xl;
+  }
+}
+
 pre {
     @apply bg-gray-200;
     @apply leading-loose;
