@@ -28,9 +28,9 @@ $page->template = 'homepage';
         </p>
 
         @foreach ($posts->where('featured', true)->take(2) as $featuredPost)
-            <div class="w-full mt-12 bg-ghost-white rounded-lg p-6" data-ga-click data-ga-element="post_card">
+            <div class="w-full mt-12 p-6 bg-gray-100 rounded-lg shadow-md" data-ga-click data-ga-element="post_card">
                 <span class="block text-dark-cerulean text-2xl uppercase font-semibold">
-                    <i class="fa fa-file-alt"></i>
+                    <svg class="inline w-5 h-6 align-text-top fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-file-alt"></use></svg>
                     Blog
                 </span>
                 @if ($featuredPost->cover_image)

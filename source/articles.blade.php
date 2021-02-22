@@ -15,28 +15,30 @@ $page->template = 'content_hub';
 @endpush
 
 @section('body')
-    <div class="max-w-5xl mx-auto px-10 pt-4 pb-12 bg-ghost-white" >
+    <div class="max-w-6xl mx-auto px-10 pt-4 pb-12 bg-ghost-white" >
         <h1 class="mt-8 mb-12">Articles</h1>
 
-        @foreach ($pagination->items as $post)
-        <div class="mt-4 bg-ghost-white rounded-lg border-4 p-6" data-ga-element="post_card">
-            <h2 class="text-3xl mt-2 leading-tight">
-                <a href="{{ $post->getUrl() }}" title="Read {{ $post->title }}" data-ga-click data-ga-item="title">
-                    {{ $post->title }}
+        <div class="lg:w-5/6 space-y-12">
+            @foreach ($pagination->items as $post)
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md" data-ga-element="post_card">
+                <h2 class="text-3xl mt-2 leading-tight">
+                    <a href="{{ $post->getUrl() }}" title="Read {{ $post->title }}" data-ga-click data-ga-item="title">
+                        {{ $post->title }}
+                    </a>
+                </h2>
+
+                <p class="mt-6">{!! $post->getExcerpt() !!}</p>
+
+                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                    href="{{ $post->getUrl() }}"
+                    title="Read - {{ $post->title }}"
+                    data-ga-click data-ga-item="button"
+                >
+                    Read Post
                 </a>
-            </h2>
-
-            <p class="mt-6">{!! $post->getExcerpt() !!}</p>
-
-            <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
-                href="{{ $post->getUrl() }}"
-                title="Read - {{ $post->title }}"
-                data-ga-click data-ga-item="button"
-            >
-                Read Post
-            </a>
+            </div>
+            @endforeach
         </div>
-        @endforeach
 
         @if ($pagination->pages->count() > 1)
         <div class="flex justify-center" data-ga-element="pagination_nav">
