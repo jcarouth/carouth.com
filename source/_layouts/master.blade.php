@@ -29,24 +29,10 @@
         <link rel="icon" href="/favicon.png">
         <link href="/articles/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
-        <script>
-            WebFontConfig = {
-                google: {
-                    families: [
-                        'Montserrat:300,400,600,800',
-                        'Source+Serif+Pro:400,600,700&display=swap',
-                    ]
-                }
-            };
-            (function() {
-                var wf = document.createElement('script');
-                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-                wf.async = 'true';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(wf,s);
-            })();
-        </script>
-        <script async src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://www.googletagmanager.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
         @if ($page->production)
@@ -59,6 +45,8 @@
             gtag('config', 'G-KC6CXHYETJ');
           </script>
         @endif
+
+        <script async src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
     </head>
 
     <body class="flex flex-col min-h-screen bg-ghost-white text-smoky-black leading-normal font-sans" data-ga-template="{{ $page->template }}">
@@ -101,12 +89,11 @@
             </div>
 
             <span class="block mt-8">
-                &copy; 2016&ndash;{{ date('Y') }} Jeff Carouth
+                &copy; {{ date('Y') }} Jeff Carouth
             </span>
         </footer>
 
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
-
         @stack('scripts')
     </body>
 </html>
