@@ -72,19 +72,29 @@
         <footer class="pt-10 pb-8 bg-smoky-black text-ghost-white text-center text-sm" role="contentinfo" data-ga-click data-ga-module="footer">
             <div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="https://twitter.com/jcarouth" aria-label="@jcarouth on Twitter" data-ga-click data-ga-element="footer_link"><i class="fab fa-twitter fill-current"></i></a>
+                    <a class="text-ghost-white" href="https://twitter.com/jcarouth" aria-label="@jcarouth on Twitter" data-ga-click data-ga-element="footer_link">
+                        <svg class="w-8 h-8 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-twitter"></use></svg>
+                    </a>
                 </div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="https://github.com/jcarouth" aria-label="jcarouth on Github" data-ga-click data-ga-element="footer_link"><i class="fab fa-github"></i></a>
+                    <a class="text-ghost-white" href="https://github.com/jcarouth" aria-label="jcarouth on Github" data-ga-click data-ga-element="footer_link">
+                        <svg class="w-8 h-8 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-github"></use></svg>
+                    </a>
                 </div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="https://linkedin.com/in/jcarouth" aria-label="jcarouth profile on LinkedIn" data-ga-click data-ga-element="footer_link"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-ghost-white" href="https://linkedin.com/in/jcarouth" aria-label="jcarouth profile on LinkedIn" data-ga-click data-ga-element="footer_link">
+                        <svg class="w-8 h-8 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-linkedin-in"></use></svg>
+                    </a>
                 </div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="https://www.instagram.com/jcarouth/" aria-label="jcarouth on Instagram" data-ga-click data-ga-element="footer_link"><i class="fab fa-instagram"></i></a>
+                    <a class="text-ghost-white" href="https://www.instagram.com/jcarouth/" aria-label="jcarouth on Instagram" data-ga-click data-ga-element="footer_link">
+                        <svg class="w-8 h-8 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-instagram"></use></svg>
+                    </a>
                 </div>
                 <div class="inline-block mx-2 text-4xl">
-                    <a class="text-ghost-white" href="mailto:jcarouth@gmail.com" aria-label="Email Jeff Carouth" data-ga-click data-ga-element="footer_link"><i class="far fa-envelope"></i></a>
+                    <a class="text-ghost-white" href="mailto:jcarouth@gmail.com" aria-label="Email Jeff Carouth" data-ga-click data-ga-element="footer_link">
+                        <svg class="w-8 h-8 fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-envelope"></use></svg>
+                    </a>
                 </div>
             </div>
 
