@@ -45,8 +45,6 @@
             gtag('config', 'G-KC6CXHYETJ');
           </script>
         @endif
-
-        <script async src="https://kit.fontawesome.com/1a42bd7d7c.js" crossorigin="anonymous"></script>
     </head>
 
     <body class="flex flex-col min-h-screen bg-ghost-white text-smoky-black leading-normal font-sans" data-ga-template="{{ $page->template }}">
