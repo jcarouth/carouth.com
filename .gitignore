@@ -4,3 +4,6 @@
 .DS_Store
 /source/assets/build/
 /.idea/*
+
+# Local Netlify folder
+.netlify
