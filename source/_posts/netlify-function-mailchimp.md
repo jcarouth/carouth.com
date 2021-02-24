@@ -187,7 +187,7 @@ To process the form we will create an endpoint to accept a POST request named `s
 
 To create a function you need a directory to hold the source and then to specify where that is in your build configuration in Netlify. For my sites I use a netlify.toml file so I will add it there
 
-```toml
+```ini
 [build]
 command = "npm run prod"
 functions = "functions"

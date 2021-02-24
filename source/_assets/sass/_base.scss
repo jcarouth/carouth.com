@@ -130,7 +130,7 @@ p {
 }
 
 pre {
-    @apply bg-gray-200;
+    background: #1E1E1E;
     @apply leading-loose;
     @apply my-6;
     @apply overflow-x-auto;
@@ -140,7 +140,6 @@ pre {
     @apply text-base;
 
     code {
-        @apply bg-transparent;
         @apply block;
         @apply p-0;
     }

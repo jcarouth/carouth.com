@@ -9,6 +9,7 @@ import hljs from 'highlight.js/lib/core';
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
 hljs.registerLanguage('css', require('highlight.js/lib/languages/css'));
 hljs.registerLanguage('html', require('highlight.js/lib/languages/xml'));
+hljs.registerLanguage('ini', require('highlight.js/lib/languages/ini'));
 hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'));
 hljs.registerLanguage('json', require('highlight.js/lib/languages/json'));
 hljs.registerLanguage('markdown', require('highlight.js/lib/languages/markdown'));
