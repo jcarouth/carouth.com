@@ -14,22 +14,22 @@ One drawback to static sites is you are often limited in what you can interact w
 Taken from Mailchimp's [Marketing API Quick Start](https://mailchimp.com/developer/marketing/guides/quick-start/):
 > Because of the potential security risks associated with exposing account API keys, Mailchimp does not support client-side calls to the Marketing API using CORS requests, nor should API keys be used in mobile apps.
 
-If you want to have a subscription form on your static site on Netlify for a Mailchimp list, you have a couple of options:
+If you want to have a subscription form on your static site on Netlify for a Mailchimp list, you have a couple options:
 
 1. Use an embedded form from Mailchimp;
 2. Use Netlify Forms and connect your form to Mailchimp via a Zapier Zap.
 
-Number 1. works okay if that's the route you want to go. You can even style the form to match your branding. It is a viable option. Number 2. is also a viable option, but has the drawback of needing to sign up for yet another service (and likely pay for it.) Depending on what you're doing that might be an acceptable solution as well.
+Number 1. works okay if that's the route you want to go; you can even style the form to match your branding. Number 2. is also a viable option, but has the drawback of needing to sign up for yet another service (and likely pay for it.) Depending on what you're doing that might be an acceptable solution as well.
 
-But if you're like me and working one a project that isn't set to recoup the costs of something like that, I have another solution in mind. We are going to build a small form powered by AlpineJS which submits to a Netlify Function (which is really just an AWS Lambda function) which, in turn, interacts with the Mailchimp API server(less) side.
+But if you're like me and working on a project that isn't set to recoup the costs of services like that, I have another solution in mind. We are going to build a small form powered by AlpineJS; which submits to a Netlify Function (really just an AWS Lambda function;) which, in turn, interacts with the Mailchimp API server(less) side.
 
 ## The Form
 
-Like any low-friction, we want a form that collects the bare minimum amount of information to, hopefully, increase conversions. That's the dream anyway. So we will make a form which has one field, "Email", and a button, "Subscribe".
+Like any low-friction UI, we want a form that collects the bare minimum amount of information to, hopefully, increase conversions. We will make a form which has one field, "Email", and a button, "Subscribe". That form will look like this:
 
 ![Email subscribe form shown near footer of website](/assets/img/posts/netlify-function-mailchimp/form-screenshot.png)
 
-The corresponding markup--styled with TailwindCSS--for this form is as follows.
+The corresponding markup—styled with TailwindCSS—for this form is show below.
 
 ```html
 <div class="max-w-4xl md:flex mx-auto py-8 md:space-x-6">
@@ -60,13 +60,13 @@ The corresponding markup--styled with TailwindCSS--for this form is as follows.
 </div>
 ```
 
-As written this form would work to collect email addresses in a Netlify Forms form named "newsletter-subscribes". You could wire this up to Mailchimp via Zapier or otherwise process it into email subscribes if that is sufficient for your application.
+As written, this form will collect email addresses via Netlify Forms in a form named "newsletter-subscribes". You could wire this up to Mailchimp via Zapier or otherwise process it into email subscribes if that is sufficient for your application.
 
-There are a couple of elements that are in place because we'll need them for some interaction later; namely the success notification and the fact that the button label "Subscribe" is wrapped in a span. I'm jumping ahead of the class a little.
+There are a couple of elements in place because we'll need them for some interaction later: namely the success notification and the button label "Subscribe" is wrapped in a span. I'm jumping ahead of the class a little.
 
 ### Interactivity with AlpineJS
 
-Assuming you have installed AlpineJS and configured it, the basic interaction we need to add to this form is to handle the submit event and show/hide the success message. To start with we need a data object. I'm going to introduce a loading state to simulate a slower connection to the server. For now, the submit button will toggle the loading state on and off with each press.
+Assuming you have installed AlpineJS and configured it, the basic interaction we need to add to this form is to handle the submit event and show/hide a message. To start with we need a data object. I'm going to introduce a loading state for use with a slower connection to the server. For now, the submit button will toggle the loading state on and off with each press.
 
 ```html
 <div x-data="{ loading: false }">
@@ -114,7 +114,7 @@ These magic strings will handle the state within my alpine data object. Speaking
 </div>
 ```
 
-Now to make use of my plan, I need to swap out the simple expression for my click handler with a function. I will name it `submit()` to make it easier to connect the dots.
+Now to make use of my plan, I need to swap out the simple expression for my click handler with a function. I will name it `submit()` to make it easier to connect the dots mentally.
 
 ```html
 <script>
@@ -134,7 +134,7 @@ Now to make use of my plan, I need to swap out the simple expression for my clic
 </div>
 ```
 
-To wire the form to the data object we will need a couple more properties. Namely we need one property to bind to the email input field, `email`, and we need a second to store a message indicating whether the sign up was successful or resulted in an error, `message`. The message will be bound to the element which currently reads "Thanks for subscribing! Check your email to confirm.".
+To wire the form's UI to the data object we will need a couple more properties. Namely we need one property to bind to the email input field, `email`, and we need a second to store a message indicating whether the sign up was successful or resulted in an error, `message`. The message will be bound to the element which currently reads "Thanks for subscribing! Check your email to confirm.".
 
 ```html
 <div class="max-w-4xl md:flex mx-auto py-8 md:space-x-6">
@@ -197,7 +197,7 @@ environment = { PHP_VERSION = "7.4" }
 
 When the site builds it will take the contents of the directory `./functions/` and put build those as functions answering at `POST /.netlify/<function-name>`. You can write functions in either JavaScript or Go. I chose JavaScript. For this particular endpoint I am going to use the Mailchimp Marketing SDK which is available as a node package. 
 
-The nice thing about the Netlify ecosystem is it can deploy your functions as an ["Unbundled JavaScript functions"](https://docs.netlify.com/functions/build-with-javascript/#unbundled-javascript-function-deploys) whereby the build bot will analyze the function source and pull required dependencies from your node_modules directory. This means you can manage dependencies all in one place and don't have to worry about a separate build process for your functions.
+The nice thing about the Netlify ecosystem is it can deploy your functions as an ["Unbundled JavaScript functions"](https://docs.netlify.com/functions/build-with-javascript/#unbundled-javascript-function-deploys) whereby the build bot will analyze the function source and pull required dependencies from your `node_modules` directory. This means you can manage dependencies all in one place and don't have to worry about a separate build process for your functions.
 
 ### Creating our first function
 
@@ -242,7 +242,7 @@ me@computer-machine$ curl -v 'http://localhost:39065/.netlify/functions/hello-ho
 
 With a functional function we can now replace the hardcoded handling of temporary email addresses with a legitimate HTTP request to this function. We will use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to do this. (If you happen to already have axios or something else, you could use that just as well.)
 
-We will configure out data object with the endpoint location for our function. I have renamed it from `hello-how-are-you` to `subscribe` because, while it was cute, it isn't a good name for this function. The rest of the new code is basically boilerplate fetch.
+We will configure our data object with the endpoint location for the subscribe function. I have renamed it from `hello-how-are-you` to `subscribe` because, while it was cute, it isn't a good name for this function. The rest of the new code is basically boilerplate fetch.
 
 ```javascript
 let subscribeForm = function() {
@@ -288,7 +288,7 @@ To get this out of the way, we need two node packages to make this work: `@mailc
 
 In the Mailchimp Marketing API docs I found and endpoint to "[Add or update list member](https://mailchimp.com/developer/marketing/api/list-members/add-or-update-list-member/)" which is exactly what I want to use. The two URL parameters required are a `list_id` and a `subscriber_hash` which is the MD5 hash of the lowercase version of the list member's email address. That's what we need `crypto` or a similar package to do.
 
-Installing these via NPM is easy enough, and that's all we need to do.
+Installing these via NPM is easy enough, and that's all we need to do to be able to use these in our function.
 
 ```bash
 npm install @mailchimp/mailchimp_marketing crypto
@@ -341,7 +341,7 @@ exports.handler = async function(event, context) {
 
 ### Send the request to the add or update API endpoint
 
-The call to mailchimp.lists.setListMember needs a list id and a subscriber hash (which is the MD5 hash of the email address) as well as a sepcification for a parameter named `status_if_new`. This allows us to attempt to subscribe any email address and if the address is already registered as part of the list it will do nothing. If they are a new subscriber it will give them the status specified. We are going to use `status_if_new: 'pending'` so that new subscribers will get a confirmation email before they are officially on the list.
+The call to `mailchimp.lists.setListMember` needs a list id and a subscriber hash (which is the MD5 hash of the email address) as well as a sepcification for a parameter named `status_if_new`. This allows us to attempt to subscribe any email address and if the address is already registered as part of the list it will do nothing. If they are a new subscriber it will give them the status specified. We are going to use `status_if_new: 'pending'` so that new subscribers will get a confirmation email before they are officially on the list.
 
 ```javascript
 const mailchimp = require('@mailchimp/mailchimp_marketing')
@@ -390,7 +390,7 @@ With this in place when the Mailchimp API responds with an error it is handled i
 
 ## Adjust Form Submit Handler for Response from Function
 
-We need to do a little clean up of our form submit handler. Earlier we assumed we'd get a message back from the function and simply display that. But that ended up not making a lot of sense to bload the function with message handling that really is part of the UI.
+We need to do a little clean up of our form submit handler. Earlier we assumed we'd get a message back from the function and simply display that. But that ended up not making a lot of sense to bloat the function with message handling that really belongs as part of the UI.
 
 ```javascript
 let subscribeForm = function() {
@@ -431,7 +431,7 @@ let subscribeForm = function() {
 
 I'll leave a final copy of the form and the function as built for this article below. I made a working copy which differs slightly and put it in a [Github repository jcarouth/netlify-mailchimp-alpinejs](https://github.com/jcarouth/netlify-mailchimp-alpinejs) if you wanted to play with it in a Jigsaw site environment.
 
-One major difference in this blog version from the Github version is that I wanted to make my component flexible to support form specific lists in the Github version. So it has a form field to set the list id rather than only using the ENV variable.
+One major difference in this blog version from the Github version is that I wanted to make my component flexible to support form specific lists in the Github version. So it has a form field to set the list id rather than only using the ENV variable. Otherwise it is identical. You would need to supply your own Mailchimp API Key, server prefix, and list id for it to do anything besides produce the error state.
 
 ```javascript
 // functions/subscribe.js
