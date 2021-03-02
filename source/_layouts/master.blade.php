@@ -44,6 +44,7 @@
 
             gtag('config', 'G-KC6CXHYETJ');
           </script>
+          <script src="https://cdn.usefathom.com/script.js" data-site="JEIDMECV" defer></script>
         @endif
     </head>
 
