@@ -4,7 +4,7 @@ section: content
 title: Custom Mailchimp Subscription Form using Netlify Functions
 date: 2021-02-23
 description:
-featured: true
+featured: false
 categories: [Netlify, AlpineJS, Mailchimp]
 excerpt: Do you want to connect your Netlify-hosted site to Mailchimp subscription forms without using the embedded forms? Read how you can do it with Netlify Functions and AlpineJS.
 twitter_image: netlify-function-mailchimp.png
