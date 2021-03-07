@@ -35,6 +35,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+
         @if ($page->production)
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC6CXHYETJ"></script>
           <script>
