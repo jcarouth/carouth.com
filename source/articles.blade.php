@@ -15,7 +15,7 @@ $page->template = 'content_hub';
 @endpush
 
 @section('body')
-    <div class="max-w-6xl mx-auto px-10 pt-4 pb-12 bg-ghost-white" >
+    <div class="max-w-6xl mx-auto px-3 md:px-10 pt-4 pb-12 bg-ghost-white" >
         <h1 class="mt-8 mb-12">Articles</h1>
 
         <div class="lg:w-5/6 space-y-12">

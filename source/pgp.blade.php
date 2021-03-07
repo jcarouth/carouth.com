@@ -13,7 +13,7 @@ $page->template = 'page';
 @endpush
 
 @section('body')
-<div class="max-w-5xl mx-auto px-10 py-4 bg-ghost-white">
+<div class="max-w-5xl mx-auto px-3 md:px-10 py-4 bg-ghost-white">
     <h1>PGP Key</h1>
 
     <p class="mb-6">I use PGP and encourage you to as well. This page lists my PGP keys and their fingerprints. However, this page should not be considered an authoritative source; this page is for reference only. Please use a fingerprint obtained in person for signing purposes.</p>

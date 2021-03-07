@@ -11,7 +11,7 @@ $page->template = 'post';
 @endpush
 
 @section('body')
-    <div class="max-w-6xl mx-auto px-10 py-4 bg-ghost-white">
+    <div class="max-w-6xl mx-auto px-3 md:px-8 py-4 bg-ghost-white">
         @if ($page->cover_image)
             <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
         @endif
@@ -44,13 +44,13 @@ $page->template = 'post';
     </div>
     @if ($recircs = $page->getRecircPosts($posts))
     <div class="bg-platinum py-10">
-        <div class="max-w-6xl mx-auto px-10">
+        <div class="max-w-6xl mx-auto px-3 md:px-10">
             <h4 class="text-2xl uppercase font-light">More to Read</h4>
             <div class="mt-8 md:flex md:space-x-6">
                 @foreach ($recircs as $recircPost)
                 <div class="mt-4 bg-ghost-white rounded-lg p-6 md:w-1/3">
                     <h2 class="text-3xl mt-2 leading-tight">
-                        <a href="{{ $recircPost->getUrl() }}"
+                        <a class="no-underline" href="{{ $recircPost->getUrl() }}"
                             title="Read {{ $recircPost->title }}"
                             data-ga-click data-ga-element="recirculation_link" data-ga-item="title"
                         >
@@ -60,7 +60,7 @@ $page->template = 'post';
 
                     <p class="mt-6">{!! $recircPost->getExcerpt() !!}</p>
 
-                    <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                    <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg no-underline"
                         href="{{ $recircPost->getUrl() }}"
                         title="Read - {{ $recircPost->title }}"
                         data-ga-click data-ga-element="recirculation_link" data-ga-item="button"
