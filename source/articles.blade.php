@@ -22,14 +22,14 @@ $page->template = 'content_hub';
             @foreach ($pagination->items as $post)
             <div class="p-6 bg-gray-100 rounded-lg shadow-md" data-ga-element="post_card">
                 <h2 class="text-3xl mt-2 leading-tight">
-                    <a href="{{ $post->getUrl() }}" title="Read {{ $post->title }}" data-ga-click data-ga-item="title">
+                    <a class="no-underline" href="{{ $post->getUrl() }}" title="Read {{ $post->title }}" data-ga-click data-ga-item="title">
                         {{ $post->title }}
                     </a>
                 </h2>
 
                 <p class="mt-6">{!! $post->getExcerpt() !!}</p>
 
-                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg no-underline"
                     href="{{ $post->getUrl() }}"
                     title="Read - {{ $post->title }}"
                     data-ga-click data-ga-item="button"
@@ -47,7 +47,7 @@ $page->template = 'content_hub';
                     <a
                         href="{{ $previous }}"
                         title="Previous Page"
-                        class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
+                        class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3 no-underline"
                         data-ga-click data-ga-item="link"
                     >&LeftArrow;</a>
                 @endif
@@ -56,7 +56,7 @@ $page->template = 'content_hub';
                     <a
                         href="{{ $path }}"
                         title="Go to Page {{ $pageNumber }}"
-                        class="bg-gray-200 hover:bg-gray-400 text-blue-700 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}"
+                        class="bg-gray-200 hover:bg-gray-400 text-blue-700 rounded mr-3 px-5 py-3 no-underline"
                         data-ga-click data-ga-item="link"
                     >{{ $pageNumber }}</a>
                 @endforeach
@@ -65,7 +65,7 @@ $page->template = 'content_hub';
                     <a
                         href="{{ $next }}"
                         title="Next Page"
-                        class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
+                        class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3 no-underline"
                         data-ga-click data-ga-item="link"
                     >&RightArrow;</a>
                 @endif

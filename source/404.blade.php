@@ -39,7 +39,7 @@ $page->template = 'error_404';
                     @foreach ($recircs as $recircPost)
                         <div class="mt-4 bg-ghost-white rounded-lg p-6 md:w-1/3">
                             <h2 class="text-3xl mt-2 leading-tight">
-                                <a href="{{ $recircPost->getUrl() }}"
+                                <a class="no-underline" href="{{ $recircPost->getUrl() }}"
                                    title="Read {{ $recircPost->title }}"
                                    data-ga-click data-ga-element="recirculation_link" data-ga-item="title"
                                 >
@@ -49,7 +49,7 @@ $page->template = 'error_404';
 
                             <p class="mt-6">{!! $recircPost->getExcerpt() !!}</p>
 
-                            <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                            <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg no-underline"
                                href="{{ $recircPost->getUrl() }}"
                                title="Read - {{ $recircPost->title }}"
                                data-ga-click data-ga-element="recirculation_link" data-ga-item="button"
