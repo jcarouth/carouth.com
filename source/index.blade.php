@@ -21,13 +21,15 @@ $page->template = 'homepage';
         src="https://pbs.twimg.com/profile_images/451352320932999168/CBZuXgB8_400x400.jpeg"
         alt="Black and white profile photo of Jeff Carouth">
 
-    <div class="max-w-4xl mx-auto px-8 pb-10">
+    <div class="max-w-4xl mx-auto px-3 md:px-8 pb-10">
         <p class="mt-12 text-center font-serif">
             I am a software engineering manager at Ziff Media Group. I lead teams and develop for the web. I live in Texas with
             my wife, two children, one dog, and two cats. These are my stories.
         </p>
 
-        @foreach ($posts->where('featured', true)->take(3) as $featuredPost)
+        @php($featured = $posts->where('featured', true)->take(3))
+
+        @foreach ($featured as $featuredPost)
             <div class="w-full mt-12 p-6 bg-gray-100 rounded-lg shadow-md" data-ga-click data-ga-element="post_card">
                 <span class="block text-dark-cerulean text-2xl uppercase font-semibold">
                     <svg class="inline w-5 h-6 align-text-top fill-current"><use xlink:href="/assets/build/icons/spritemap.svg#sprite-file-alt"></use></svg>
@@ -59,26 +61,22 @@ $page->template = 'homepage';
             </div>
         @endforeach
 
-        {{-- @include('_components.newsletter-signup') --}}
-
-        {{--
+        <div class="mt-12 space-y-6">
         @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
-            <div class="flex flex-col md:flex-row md:-mx-6">
+            <div class="md:flex md:flex-row md:space-x-6 space-y-6 md:space-y-0">
                 @foreach ($row as $post)
-                    <div class="w-full md:w-1/2 md:mx-6">
+                    <div class="w-full md:w-1/2 md:flex md:items-stretch">
                         @include('_components.post-preview-inline')
                     </div>
-
-                    @if (! $loop->last)
-                        <hr class="block md:hidden w-full border-b mt-2 mb-6">
-                    @endif
                 @endforeach
             </div>
-
-            @if (! $loop->last)
-                <hr class="w-full border-b mt-2 mb-6">
-            @endif
         @endforeach
-        --}}
+        </div>
+
+        <div class="mt-12">
+            <div class="md:w-1/3 md:mx-auto py-2 bg-gray-100 border-2 border-gray-200 text-center">
+                <a href="/articles/" class="block no-underline text-lg font-semibold">All Articles</a>
+            </div>
+        </div>
     </div>
 @stop
