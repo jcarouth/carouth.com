@@ -24,6 +24,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
+    "alpinejs": "^2.8.1",
     "node-forge": "^0.10.0",
     "node-notifier": "^8.0.1",
     "socket.io": "^2.4.1"

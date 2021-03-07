@@ -1,7 +1,4 @@
-import { trackGaClick } from './listeners/gaClick';
-
-window.axios = require('axios');
-window.fuse = require('fuse.js');
+import 'alpinejs';
 
 import hljs from 'highlight.js/lib/core';
 
@@ -19,10 +16,4 @@ hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 
 document.querySelectorAll('pre code').forEach((block) => {
   hljs.highlightBlock(block);
-});
-
-window.addEventListener('DOMContentLoaded', (e) => {
-  document.querySelectorAll('[data-ga-click]:not(.ga-click-set)').forEach((clickTarget) => {
-    clickTarget.addEventListener('click', trackGaClick)
-  });
 });
