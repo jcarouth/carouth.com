@@ -15,7 +15,7 @@ $page->template = 'post';
         @if ($page->cover_image)
             <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
         @endif
-        <p class="font-light tracking-wider uppercase">{{ date('F j, Y', $page->date) }}</p>
+        <p class="font-light tracking-wider uppercase">{{ $page->getDate()->format('F j, Y') }}</p>
         <h1 class="mt-4 text-4xl leading-tight">{{ $page->title }}</h1>
 
         <div class="post-content mt-6 pb-4" v-pre>
