@@ -49,18 +49,37 @@
     </head>
 
     <body class="flex flex-col min-h-screen bg-ghost-white text-smoky-black leading-normal font-sans" data-ga-template="{{ $page->template }}">
-        <header class="flex items-center h-12 bg-smoky-black text-ghost-white" role="banner" data-ga-module="header">
-            <div class="flex justify-between container max-w-6xl mx-auto px-3">
-                <div class="text-2xl text-ghost-white">
+        <header class="py-4 bg-smoky-black text-ghost-white" role="banner" data-ga-module="header">
+            <div x-data="{isOpen: false}" class="flex justify-between flex-wrap container max-w-6xl mx-auto px-3 items-center">
+                <div class="flex-shrink-0 text-2xl text-ghost-white">
                     <a href="/" data-ga-click data-ga-element="header_link" data-ga-item="logo">
                         <img class="h-6 fill-current" src="/assets/img/jc-logo.svg" alt="JC logo" />
                     </a>
                 </div>
-                <div class="block h-6">
-                    <div class="inline-block">
-                        <a class="text-ghost-white font-normal" href="/articles/" data-ga-click data-ga-element="header_link">Articles</a>
-                    </div>
-                </div>
+
+                <button @click="isOpen = !isOpen" type="button" class="flex justify-center items-center px-5 lg:hidden focus:outline-none">
+                    <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-current text-white">
+                        <use xlink:href="/assets/build/icons/spritemap.svg#sprite-menu"></use>
+                    </svg>
+
+                    <svg x-cloak x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-current text-white">
+                        <use xlink:href="/assets/build/icons/spritemap.svg#sprite-x"></use>
+                    </svg>
+                </button>
+
+                <nav class="w-full mt-6 lg:mt-0 flex-grow lg:flex lg:items-center lg:w-auto hidden" :class="{ 'block': isOpen, 'hidden': !isOpen}">
+                    <ul class="my-0 pl-0 lg:flex flex-1 justify-end items-center space-y-4 lg:space-y-0 lg:space-x-6 list-none ">
+                        <li class="pl-4">
+                            <a title="{{ $page->siteName }} Blog" href="/articles/">Articles</a>
+                        </li>
+                        <li class="pl-4">
+                            <a title="{{ $page->siteName }} About" href="/about/">About</a>
+                        </li>
+                        <li class="pl-4">
+                            <a title="{{ $page->siteName }} PGP Key" href="/pgp/">PGP Key</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
