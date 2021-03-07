@@ -30,7 +30,6 @@
         <link href="/articles/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://www.googletagmanager.com">
 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
@@ -42,14 +41,6 @@
         </style>
 
         @if ($page->production)
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-KC6CXHYETJ"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-KC6CXHYETJ');
-          </script>
           <script src="https://cdn.usefathom.com/script.js" data-site="JEIDMECV" defer></script>
         @endif
     </head>
