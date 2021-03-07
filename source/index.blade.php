@@ -42,14 +42,14 @@ $page->template = 'homepage';
                 </p>
 
                 <h2 class="text-3xl mt-2 leading-tight">
-                    <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="" data-ga-click data-ga-item="title">
+                    <a class="no-underline" href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="" data-ga-click data-ga-item="title">
                         {{ $featuredPost->title }}
                     </a>
                 </h2>
 
                 <p class="mt-8">{!! $featuredPost->getExcerpt() !!}</p>
 
-                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg"
+                <a class="block mt-4 w-40 py-3 px-6 bg-dark-cerulean text-center text-ghost-white font-semibold uppercase tracking-wide rounded-lg no-underline"
                     href="{{ $featuredPost->getUrl() }}"
                     title="Read - {{ $featuredPost->title }}"
                     data-ga-click data-ga-item="button"

@@ -2,6 +2,10 @@ body {
     font-size: 16px;
 }
 
+a {
+  @apply underline;
+}
+
 blockquote {
     @apply border-dark-cerulean;
     @apply border-l-4;

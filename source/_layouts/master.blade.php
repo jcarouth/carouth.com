@@ -70,13 +70,13 @@
                 <nav class="w-full mt-6 lg:mt-0 flex-grow lg:flex lg:items-center lg:w-auto hidden" :class="{ 'block': isOpen, 'hidden': !isOpen}">
                     <ul class="my-0 pl-0 lg:flex flex-1 justify-end items-center space-y-4 lg:space-y-0 lg:space-x-6 list-none ">
                         <li class="pl-4">
-                            <a title="{{ $page->siteName }} Blog" href="/articles/">Articles</a>
+                            <a class="no-underline" title="{{ $page->siteName }} Blog" href="/articles/">Articles</a>
                         </li>
                         <li class="pl-4">
-                            <a title="{{ $page->siteName }} About" href="/about/">About</a>
+                            <a class="no-underline" title="{{ $page->siteName }} About" href="/about/">About</a>
                         </li>
                         <li class="pl-4">
-                            <a title="{{ $page->siteName }} PGP Key" href="/pgp/">PGP Key</a>
+                            <a class="no-underline" title="{{ $page->siteName }} PGP Key" href="/pgp/">PGP Key</a>
                         </li>
                     </ul>
                 </nav>
