@@ -49,12 +49,14 @@
         <header class="py-4 bg-smoky-black text-ghost-white" role="banner" data-ga-module="header">
             <div x-data="{isOpen: false}" class="flex justify-between flex-wrap container max-w-6xl mx-auto px-3 items-center">
                 <div class="flex-shrink-0 text-2xl text-ghost-white">
-                    <a href="/" data-ga-click data-ga-element="header_link" data-ga-item="logo">
-                        <img class="h-6 fill-current" src="/assets/img/jc-logo.svg" alt="JC logo" />
+                    <a href="/" data-ga-click data-ga-element="header_link" data-ga-item="logo" aria-label="Jeff Carouth Home">
+                        <svg class="w-14 h-6 fill-current">
+                            <use xlink:href="/assets/build/icons/spritemap.svg#sprite-jc-mark-solid"></use>
+                        </svg>
                     </a>
                 </div>
 
-                <button @click="isOpen = !isOpen" type="button" class="flex justify-center items-center lg:hidden focus:outline-none">
+                <button @click="isOpen = !isOpen" type="button" class="flex justify-center items-center lg:hidden focus:outline-none" aria-label="Open Navigation Menu">
                     <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-current text-white">
                         <use xlink:href="/assets/build/icons/spritemap.svg#sprite-menu"></use>
                     </svg>
