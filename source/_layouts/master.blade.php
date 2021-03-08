@@ -54,7 +54,7 @@
                     </a>
                 </div>
 
-                <button @click="isOpen = !isOpen" type="button" class="flex justify-center items-center px-5 lg:hidden focus:outline-none">
+                <button @click="isOpen = !isOpen" type="button" class="flex justify-center items-center lg:hidden focus:outline-none">
                     <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-current text-white">
                         <use xlink:href="/assets/build/icons/spritemap.svg#sprite-menu"></use>
                     </svg>

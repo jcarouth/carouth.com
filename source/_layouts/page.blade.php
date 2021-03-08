@@ -6,7 +6,7 @@
 @endpush
 
 @section('body')
-<div class="max-w-5xl mx-auto px-3 md:px-10 py-4 bg-ghost-white">
+<div class="max-w-6xl mx-auto px-3 py-8 bg-ghost-white">
     @yield('page-content')
 </div>
 @endsection
